@@ -28,6 +28,9 @@ SUPPORTED_DEVICES = {
     "kitchen_light": ["turn_on", "turn_off"],
     "thermostat": ["set_temp", "increase_temp", "decrease_temp"],
     "front_door_lock": ["lock", "unlock"],
+    "back_door": ["lock", "unlock"],
+    "humidifier": ["turn_on", "turn_off"],
+    "air_conditioner": ["turn_on", "turn_off"],
 }
 
 MIN_TEMP_C = 10.0
@@ -41,6 +44,9 @@ class HomeState:
     kitchen_light: bool = False
     thermostat: float = 20.0
     front_door_lock: bool = True  # True = locked, False = unlocked
+    back_door: bool = True  # True = locked, False = unlocked
+    humidifier: bool = False
+    air_conditioner: bool = False
 
     def as_dict(self) -> dict:
         return {
@@ -48,6 +54,9 @@ class HomeState:
             "kitchen_light": self.kitchen_light,
             "thermostat": self.thermostat,
             "front_door_lock": self.front_door_lock,
+            "back_door": self.back_door,
+            "humidifier": self.humidifier,
+            "air_conditioner": self.air_conditioner,
         }
 
 
@@ -104,7 +113,7 @@ class HomeSimulator:
                 logger.warning("Ignoring unsupported action '%s' for target '%s'", act, target)
                 return False
 
-            if target in ("living_room_light", "kitchen_light"):
+            if target in ("living_room_light", "kitchen_light", "humidifier", "air_conditioner"):
                 setattr(self.state, target, act == "turn_on")
 
             elif target == "thermostat":
@@ -119,8 +128,8 @@ class HomeSimulator:
                         self.state.thermostat - (float(val) if val else 1.0)
                     )
 
-            elif target == "front_door_lock":
-                self.state.front_door_lock = (act == "lock")
+            elif target in ("front_door_lock", "back_door"):
+                setattr(self.state, target, act == "lock")
 
             self._notify(target)
             return True
@@ -133,16 +142,20 @@ class HomeSimulator:
     # Manual quick-toggle controls (driven directly by the GUI)
     # ------------------------------------------------------------------ #
     def toggle_light(self, target: str):
-        if target not in ("living_room_light", "kitchen_light"):
+        if target not in ("living_room_light", "kitchen_light", "humidifier", "air_conditioner"):
             logger.warning("toggle_light called with invalid target: %s", target)
             return
         current = getattr(self.state, target)
         setattr(self.state, target, not current)
         self._notify(target)
 
-    def toggle_lock(self):
-        self.state.front_door_lock = not self.state.front_door_lock
-        self._notify("front_door_lock")
+    def toggle_lock(self, target: str = "front_door_lock"):
+        if target not in ("front_door_lock", "back_door"):
+            logger.warning("toggle_lock called with invalid target: %s", target)
+            return
+        current = getattr(self.state, target)
+        setattr(self.state, target, not current)
+        self._notify(target)
 
     def set_thermostat(self, value: float):
         self.state.thermostat = self._clamp_temp(float(value))

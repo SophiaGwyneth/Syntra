@@ -588,6 +588,24 @@ class SyntraGUI(ctk.CTk):
         )
         self.lock_card.grid(row=3, column=0, sticky="ew", pady=6)
 
+        self.humidifier_card = DeviceCard(
+            devices_frame, "Humidifier",
+            on_toggle=lambda: self._handle_device_toggle("humidifier")
+        )
+        self.humidifier_card.grid(row=4, column=0, sticky="ew", pady=6)
+
+        self.ac_card = DeviceCard(
+            devices_frame, "Air Conditioner",
+            on_toggle=lambda: self._handle_device_toggle("air_conditioner")
+        )
+        self.ac_card.grid(row=5, column=0, sticky="ew", pady=6)
+
+        self.back_door_card = DeviceCard(
+            devices_frame, "Back Door Lock",
+            on_toggle=lambda: self._handle_device_toggle("back_door")
+        )
+        self.back_door_card.grid(row=6, column=0, sticky="ew", pady=6)
+
         media_label = ctk.CTkLabel(
             panel, text="MEDIA", font=("Consolas", 11, "bold"), text_color=FG_MUTED
         )
@@ -758,6 +776,20 @@ class SyntraGUI(ctk.CTk):
         locked = state["front_door_lock"]
         self.lock_card.set_state_text("LOCKED" if locked else "UNLOCKED", active=locked)
         self.lock_card.set_switch(locked)  # switch ON visually = locked
+
+        self.humidifier_card.set_state_text(
+            "ON" if state["humidifier"] else "OFF", active=state["humidifier"]
+        )
+        self.humidifier_card.set_switch(state["humidifier"])
+
+        self.ac_card.set_state_text(
+            "ON" if state["air_conditioner"] else "OFF", active=state["air_conditioner"]
+        )
+        self.ac_card.set_switch(state["air_conditioner"])
+
+        back_locked = state["back_door"]
+        self.back_door_card.set_state_text("LOCKED" if back_locked else "UNLOCKED", active=back_locked)
+        self.back_door_card.set_switch(back_locked)  # switch ON visually = locked
 
     def update_music_display(self, now_playing: dict):
         self.ui_call(self.music_card.update_now_playing, now_playing)

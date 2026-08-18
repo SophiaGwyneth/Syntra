@@ -93,7 +93,8 @@ class SmartHomeAction(BaseModel):
     )
     target: str = Field(
         description="Target device: 'living_room_light', 'kitchen_light', "
-                    "'thermostat', 'front_door_lock', 'music_player', 'weather', 'alarm', 'time'"
+                    "'thermostat', 'front_door_lock', 'back_door', 'humidifier', "
+                    "'air_conditioner', 'music_player', 'weather', 'alarm', 'time'"
     )
     value: Optional[float] = Field(
         default=None,
@@ -134,11 +135,17 @@ class AIEngine:
 
         # 0. Global intent overrides based on raw text to prevent cross-device hallucinations
         if "unlock" in text_lower and any(d in text_lower for d in ["door", "lock"]):
-            target = "front_door_lock"
+            target = "back_door" if "back" in text_lower else "front_door_lock"
             action = "unlock"
         elif "lock" in text_lower and any(d in text_lower for d in ["door", "lock"]) and "unlock" not in text_lower:
-            target = "front_door_lock"
+            target = "back_door" if "back" in text_lower else "front_door_lock"
             action = "lock"
+        elif "humidifier" in text_lower:
+            target = "humidifier"
+            action = "turn_off" if any(k in text_lower for k in ["turn off", "switch off", "shut off", "stop"]) else "turn_on"
+        elif any(k in text_lower for k in ["air conditioner", "air conditioning", "aircon", "a/c"]) or " ac " in f" {text_lower} ":
+            target = "air_conditioner"
+            action = "turn_off" if any(k in text_lower for k in ["turn off", "switch off", "shut off", "stop"]) else "turn_on"
         elif any(k in text_lower for k in ["stop music", "stop playing", "shut up", "turn off music"]) or text_lower == "stop":
             target = "music_player"
             action = "stop"
@@ -177,6 +184,12 @@ class AIEngine:
             target = "kitchen_light"
         elif any(k in target for k in ["thermostat", "temp", "temperature"]):
             target = "thermostat"
+        elif any(k in target for k in ["humidifier", "humid"]):
+            target = "humidifier"
+        elif any(k in target for k in ["air_conditioner", "aircon", "air conditioner", "a/c"]) or target == "ac":
+            target = "air_conditioner"
+        elif "back" in target and any(k in target for k in ["door", "lock"]):
+            target = "back_door"
         elif any(k in target for k in ["door", "lock", "front_door"]):
             target = "front_door_lock"
         elif any(k in target for k in ["music", "media", "player", "song", "spotify", "youtube", "kiss me", "speed demon", "i like me better"]) or action in ["play", "pause", "resume", "stop", "next", "previous", "set_volume"]:
@@ -188,10 +201,15 @@ class AIEngine:
                 action = "unlock"
             elif any(k in action for k in ["lock", "close"]):
                 action = "lock"
-        elif target in ["living_room_light", "kitchen_light"]:
-            if any(k in action for k in ["on", "turn_on", "enable", "toggle"]):
+        elif target == "back_door":
+            if "unlock" in text_lower or any(k in action for k in ["unlock", "open"]):
+                action = "unlock"
+            elif any(k in action for k in ["lock", "close"]):
+                action = "lock"
+        elif target in ["living_room_light", "kitchen_light", "humidifier", "air_conditioner"]:
+            if any(k in action for k in ["on", "turn_on", "enable", "toggle", "start", "run"]):
                 action = "turn_on"
-            elif any(k in action for k in ["off", "turn_off", "disable"]):
+            elif any(k in action for k in ["off", "turn_off", "disable", "stop"]):
                 action = "turn_off"
         elif target == "thermostat":
             if any(k in action for k in ["set", "change", "adjust", "temp"]):
@@ -328,11 +346,14 @@ class AIEngine:
         system_prompt = (
             "You are Syntra, an AI home assistant. Parse natural language user "
             "commands into structured JSON actions.\n\n"
-            "EXACT ALLOWED TARGETS: 'living_room_light', 'kitchen_light', 'thermostat', 'front_door_lock', 'music_player', 'weather', 'alarm', 'time'\n"
+            "EXACT ALLOWED TARGETS: 'living_room_light', 'kitchen_light', 'thermostat', 'front_door_lock', 'back_door', 'humidifier', 'air_conditioner', 'music_player', 'weather', 'alarm', 'time'\n"
             "EXACT ALLOWED ACTIONS:\n"
             "- Lights: 'turn_on', 'turn_off'\n"
             "- Thermostat: 'set_temp', 'increase_temp', 'decrease_temp'\n"
             "- Front Door: 'lock', 'unlock'\n"
+            "- Back Door: 'lock', 'unlock'\n"
+            "- Humidifier: 'turn_on', 'turn_off'\n"
+            "- Air Conditioner: 'turn_on', 'turn_off'\n"
             "- Music Player: 'play', 'pause', 'resume', 'stop', 'next', 'previous', 'play music', 'set_volume'\n"
             "- Weather: 'get_weather' (query = city name)\n"
             "- Alarm: 'set_alarm' (query = 'HH:MM' 24-hour time)\n"

@@ -7,3 +7,111 @@
 2026-08-18 17:11:43,123 [INFO] TTS Synthesizing: 'Hello! I am Syntra, your home assistant. How can I assist you today?'
 2026-08-18 17:11:43,775 [INFO] Imported existing <module 'comtypes.gen' from 'C:\\Users\\Sophia\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
 2026-08-18 17:11:43,780 [INFO] Using writeable comtypes cache directory: 'C:\Users\Sophia\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2026-08-18 18:33:50,120 [INFO] Initializing Syntra AI Home Assistant...
+2026-08-18 18:33:54,998 [INFO] Audio mixer initialized.
+2026-08-18 18:33:55,001 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-18 18:33:57,381 [INFO] Launching Syntra GUI application...
+2026-08-18 18:33:57,881 [INFO] Delivering session greeting.
+2026-08-18 18:33:57,882 [INFO] Syntra response: Hello! I am Syntra, your home assistant. How can I assist you today?
+2026-08-18 18:33:57,884 [INFO] TTS Synthesizing: 'Hello! I am Syntra, your home assistant. How can I assist you today?'
+2026-08-18 18:33:58,049 [INFO] Imported existing <module 'comtypes.gen' from 'C:\\Users\\Sophia\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-08-18 18:33:58,050 [INFO] Using writeable comtypes cache directory: 'C:\Users\Sophia\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2026-08-18 18:34:33,488 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'turn on humidifier'
+2026-08-18 18:34:45,138 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-18 18:34:45,140 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "turn_on", "target": "humidifier", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The humidifier has been turned on."
+}
+2026-08-18 18:34:45,140 [INFO] Simulator state updated: humidifier -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 20.0, 'front_door_lock': True, 'back_door': True, 'humidifier': True, 'air_conditioner': False}
+2026-08-18 18:34:45,140 [INFO] Command processed in 11.66s (actions applied: True)
+2026-08-18 18:34:45,141 [INFO] Syntra response: The humidifier has been turned on.
+2026-08-18 18:34:45,194 [INFO] TTS Synthesizing: 'The humidifier has been turned on.'
+2026-08-18 18:34:52,731 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'turn on aircon'
+2026-08-18 18:34:54,110 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-18 18:34:54,111 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "turn_on", "target": "air_conditioner", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The air conditioner has been turned on."
+}
+2026-08-18 18:34:54,111 [INFO] Simulator state updated: air_conditioner -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 20.0, 'front_door_lock': True, 'back_door': True, 'humidifier': True, 'air_conditioner': True}
+2026-08-18 18:34:54,112 [INFO] Command processed in 1.38s (actions applied: True)
+2026-08-18 18:34:54,113 [INFO] Syntra response: The air conditioner has been turned on.
+2026-08-18 18:34:54,186 [INFO] TTS Synthesizing: 'The air conditioner has been turned on.'
+2026-08-18 18:34:57,193 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'turn off ac'
+2026-08-18 18:34:58,681 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-18 18:34:58,682 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "turn_off", "target": "air_conditioner", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The air conditioner has been turned off."
+}
+2026-08-18 18:34:58,685 [INFO] Simulator state updated: air_conditioner -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 20.0, 'front_door_lock': True, 'back_door': True, 'humidifier': True, 'air_conditioner': False}
+2026-08-18 18:34:58,686 [INFO] Command processed in 1.49s (actions applied: True)
+2026-08-18 18:34:58,689 [INFO] Syntra response: The air conditioner has been turned off.
+2026-08-18 18:34:58,773 [INFO] TTS Synthesizing: 'The air conditioner has been turned off.'
+2026-08-18 18:35:12,133 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'unlock back door'
+2026-08-18 18:35:13,651 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-18 18:35:13,651 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "unlock", "target": "back_door", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The back door has been unlocked."
+}
+2026-08-18 18:35:13,651 [INFO] Simulator state updated: back_door -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 20.0, 'front_door_lock': True, 'back_door': False, 'humidifier': True, 'air_conditioner': False}
+2026-08-18 18:35:13,652 [INFO] Command processed in 1.52s (actions applied: True)
+2026-08-18 18:35:13,653 [INFO] Syntra response: The back door has been unlocked.
+2026-08-18 18:35:13,694 [INFO] TTS Synthesizing: 'The back door has been unlocked.'
+2026-08-18 18:35:49,990 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'lock back'
+2026-08-18 18:35:51,434 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-18 18:35:51,434 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "lock", "target": "back_door", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The back door has been locked."
+}
+2026-08-18 18:35:51,435 [INFO] Simulator state updated: back_door -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 20.0, 'front_door_lock': True, 'back_door': True, 'humidifier': True, 'air_conditioner': False}
+2026-08-18 18:35:51,435 [INFO] Command processed in 1.45s (actions applied: True)
+2026-08-18 18:35:51,436 [INFO] Syntra response: The back door has been locked.
+2026-08-18 18:35:51,491 [INFO] TTS Synthesizing: 'The back door has been locked.'
+2026-08-18 18:36:03,044 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'lock both doors'
+2026-08-18 18:36:05,002 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-18 18:36:05,002 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "lock", "target": "front_door_lock", "value": null, "query": null, "source": "local"},
+    {"action": "lock", "target": "back_door", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "Both doors have been locked."
+}
+2026-08-18 18:36:05,002 [INFO] Simulator state updated: front_door_lock -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 20.0, 'front_door_lock': True, 'back_door': True, 'humidifier': True, 'air_conditioner': False}
+2026-08-18 18:36:05,003 [INFO] Simulator state updated: front_door_lock -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 20.0, 'front_door_lock': True, 'back_door': True, 'humidifier': True, 'air_conditioner': False}
+2026-08-18 18:36:05,045 [INFO] Command processed in 2.0s (actions applied: True)
+2026-08-18 18:36:05,046 [INFO] Syntra response: Both doors have been locked.
+2026-08-18 18:36:05,086 [INFO] TTS Synthesizing: 'Both doors have been locked.'
+2026-08-18 18:36:12,504 [INFO] Simulator state updated: air_conditioner -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 20.0, 'front_door_lock': True, 'back_door': True, 'humidifier': True, 'air_conditioner': True}
+2026-08-18 18:36:12,848 [INFO] Simulator state updated: air_conditioner -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 20.0, 'front_door_lock': True, 'back_door': True, 'humidifier': True, 'air_conditioner': False}
+2026-08-18 18:37:19,987 [INFO] Microphone listening...
+2026-08-18 18:37:25,812 [INFO] Audio captured. Processing STT...
+2026-08-18 18:37:26,463 [INFO] STT Transcription: 'hello'
+2026-08-18 18:37:26,515 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'hello'
+2026-08-18 18:37:27,855 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-18 18:37:27,856 [INFO] Raw LLM Response: {
+  "actions": [],
+  "spoken_response": "Hello! How can I help you today?"
+}
+2026-08-18 18:37:27,856 [INFO] Command processed in 1.35s (actions applied: False)
+2026-08-18 18:37:27,856 [INFO] Syntra response: Hello! How can I help you today?
+2026-08-18 18:37:27,857 [INFO] TTS Synthesizing: 'Hello! How can I help you today?'
+2026-08-18 18:37:36,314 [INFO] Command processed in 0.0s (actions applied: False)
+2026-08-18 18:37:36,315 [INFO] Syntra response: I am Syntra, your AI home assistant. My purpose is to help you control your smart home devices, manage media playback, adjust climate controls, and make your daily routines easier!
+2026-08-18 18:37:36,329 [INFO] TTS Synthesizing: 'I am Syntra, your AI home assistant. My purpose is to help you control your smart home devices, manage media playback, adjust climate controls, and make your daily routines easier!'
+2026-08-18 18:38:01,045 [INFO] Weather fetched for California: 22.5°C, Broken clouds
+2026-08-18 18:38:01,060 [INFO] Command processed in 0.8s (actions applied: True)
+2026-08-18 18:38:01,061 [INFO] Syntra response: It's currently 23°C and broken clouds in California, US.
+2026-08-18 18:38:01,066 [INFO] TTS Synthesizing: 'It's currently 23°C and broken clouds in California, US.'
+2026-08-18 18:38:09,994 [INFO] Resolved 'london' -> timezone 'Europe/London' -> 11:38 AM
+2026-08-18 18:38:09,994 [INFO] Command processed in 3.04s (actions applied: True)
+2026-08-18 18:38:09,994 [INFO] Syntra response: It's 11:38 AM on Tuesday, August 18 in london.
+2026-08-18 18:38:09,999 [INFO] TTS Synthesizing: 'It's 11:38 AM on Tuesday, August 18 in london.'

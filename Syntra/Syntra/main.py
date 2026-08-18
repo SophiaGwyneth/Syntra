@@ -378,8 +378,10 @@ class SyntraApp:
     # ------------------------------------------------------------------ #
     def handle_device_toggle(self, target: str):
         try:
-            if target in ("living_room_light", "kitchen_light"):
+            if target in ("living_room_light", "kitchen_light", "humidifier", "air_conditioner"):
                 self.simulator.toggle_light(target)
+            elif target == "back_door":
+                self.simulator.toggle_lock(target)
         except Exception:
             logger.exception("Failed to toggle device: %s", target)
             self.gui.show_error(f"Could not toggle {target}.")
