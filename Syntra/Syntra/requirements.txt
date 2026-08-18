@@ -1,0 +1,10 @@
+customtkinter>=5.2.2
+pyttsx3>=2.90
+pygame>=2.5.2
+SpeechRecognition>=3.10.4
+PyAudio>=0.2.14
+ollama>=0.3.3
+pydantic>=2.7.0
+python-dotenv>=1.0.1
+requests>=2.31.0
+pytz>=2024.1

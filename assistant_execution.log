@@ -1,0 +1,9 @@
+2026-08-18 17:11:33,237 [INFO] Initializing Syntra AI Home Assistant...
+2026-08-18 17:11:39,740 [INFO] Audio mixer initialized.
+2026-08-18 17:11:39,745 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-18 17:11:42,619 [INFO] Launching Syntra GUI application...
+2026-08-18 17:11:43,120 [INFO] Delivering session greeting.
+2026-08-18 17:11:43,121 [INFO] Syntra response: Hello! I am Syntra, your home assistant. How can I assist you today?
+2026-08-18 17:11:43,123 [INFO] TTS Synthesizing: 'Hello! I am Syntra, your home assistant. How can I assist you today?'
+2026-08-18 17:11:43,775 [INFO] Imported existing <module 'comtypes.gen' from 'C:\\Users\\Sophia\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-08-18 17:11:43,780 [INFO] Using writeable comtypes cache directory: 'C:\Users\Sophia\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
