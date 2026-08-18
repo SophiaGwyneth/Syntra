@@ -40,6 +40,8 @@ from typing import Callable, Optional
 
 import requests
 
+from geocoding import geocode, short_label
+
 logger = logging.getLogger("VirtualAssistant")
 
 # --------------------------------------------------------------------------- #
@@ -76,11 +78,43 @@ class WeatherReport:
         )
 
 
+def _owm_request(params: dict, api_key_error_label: str) -> Optional[dict]:
+    """
+    Makes one OpenWeatherMap request. Returns the parsed JSON body on
+    success, or None on a plain "not found" (404) so the caller can decide
+    whether to try a fallback. Anything else (auth failure, network error)
+    still raises WeatherError immediately.
+    """
+    try:
+        response = requests.get(OWM_BASE_URL, params=params, timeout=REQUEST_TIMEOUT)
+
+        if response.status_code == 404:
+            return None
+        elif response.status_code == 401:
+            raise WeatherError("Invalid OpenWeatherMap API key provided.")
+
+        response.raise_for_status()
+    except requests.exceptions.RequestException as exc:
+        logger.exception("Weather request failed for '%s'", api_key_error_label)
+        raise WeatherError(
+            f"I couldn't reach the weather service to look up '{api_key_error_label}'."
+        ) from exc
+
+    return response.json()
+
+
 def get_weather(location: str, api_key: Optional[str] = None) -> WeatherReport:
     """Fetches real-time temperature and conditions for `location` using OpenWeatherMap.
 
+    `location` can be a city ("Daegu"), a state/province ("Texas",
+    "Cavite"), a country, or a landmark. City names are resolved directly
+    by OpenWeatherMap; anything else falls back to a global geocoder
+    (geocoding.geocode) that turns the name into coordinates, which
+    OpenWeatherMap can always answer, giving effectively worldwide coverage.
+
     Raises:
-        WeatherError: on missing API key, empty input, unknown city, or network errors.
+        WeatherError: on missing API key, empty input, unresolvable location,
+            or network errors.
     """
     key = api_key or OPENWEATHER_API_KEY
     if not key or key == "YOUR_OPENWEATHERMAP_API_KEY":
@@ -91,28 +125,24 @@ def get_weather(location: str, api_key: Optional[str] = None) -> WeatherReport:
 
     query = location.strip()
 
-    params = {
-        "q": query,
-        "appid": key,
-        "units": "metric",  # Fetch temperature directly in Celsius
-    }
+    # Fast path: OpenWeatherMap resolves most literal city names directly.
+    data = _owm_request({"q": query, "appid": key, "units": "metric"}, query)
 
-    try:
-        response = requests.get(OWM_BASE_URL, params=params, timeout=REQUEST_TIMEOUT)
-        
-        if response.status_code == 404:
+    if data is None:
+        # `query` wasn't a city name OWM recognized directly - it's likely
+        # a state, province, country, or landmark (e.g. "Texas", "Cavite",
+        # "Mount Everest"). Fall back to a global geocoder to resolve it to
+        # coordinates, then ask OWM for the weather at that point instead.
+        geo = geocode(query)
+        if geo is None:
             raise WeatherError(f"I couldn't find a place called '{query}'.")
-        elif response.status_code == 401:
-            raise WeatherError("Invalid OpenWeatherMap API key provided.")
-
-        response.raise_for_status()
-    except requests.exceptions.RequestException as exc:
-        logger.exception("Weather request failed for '%s'", query)
-        raise WeatherError(
-            f"I couldn't reach the weather service to look up '{query}'."
-        ) from exc
-
-    data = response.json()
+        lat, lon, display_name = geo
+        data = _owm_request(
+            {"lat": lat, "lon": lon, "appid": key, "units": "metric"},
+            short_label(display_name),
+        )
+        if data is None:
+            raise WeatherError(f"I couldn't find weather data for '{query}'.")
 
     # Parse response data
     resolved_name = data.get("name", query)

@@ -134,16 +134,35 @@ class AIEngine:
         val = action_data.get("value")
 
         # 0. Global intent overrides based on raw text to prevent cross-device hallucinations
-        if "unlock" in text_lower and any(d in text_lower for d in ["door", "lock"]):
+        both_doors = "both" in text_lower and any(d in text_lower for d in ["door", "lock"])
+        if both_doors:
+            # "lock/unlock both doors" mentions neither 'front' nor 'back',
+            # so the single-target overrides below would collapse every
+            # action in the list onto front_door_lock (or back_door),
+            # silently dropping the other door. Skip the override here and
+            # let each action's own 'target' field (from the LLM) drive
+            # the per-action normalization in the sections below instead.
+            pass
+        elif "unlock" in text_lower and any(d in text_lower for d in ["door", "lock"]):
             target = "back_door" if "back" in text_lower else "front_door_lock"
             action = "unlock"
         elif "lock" in text_lower and any(d in text_lower for d in ["door", "lock"]) and "unlock" not in text_lower:
             target = "back_door" if "back" in text_lower else "front_door_lock"
             action = "lock"
-        elif "humidifier" in text_lower:
+        elif "humidifier" in text_lower and not (
+            any(k in text_lower for k in ["air conditioner", "air conditioning", "aircon", "a/c"]) or " ac " in f" {text_lower} "
+        ):
+            # Guarded to single-device mentions only: if the sentence also
+            # mentions the AC ("humidifier and aircon"), forcing every
+            # action in the list to 'humidifier' here would silently eat
+            # the air_conditioner action too. Compound commands instead
+            # fall through to the per-action target normalization below,
+            # which trusts each action's own 'target' field from the LLM.
             target = "humidifier"
             action = "turn_off" if any(k in text_lower for k in ["turn off", "switch off", "shut off", "stop"]) else "turn_on"
-        elif any(k in text_lower for k in ["air conditioner", "air conditioning", "aircon", "a/c"]) or " ac " in f" {text_lower} ":
+        elif (
+            any(k in text_lower for k in ["air conditioner", "air conditioning", "aircon", "a/c"]) or " ac " in f" {text_lower} "
+        ) and "humidifier" not in text_lower:
             target = "air_conditioner"
             action = "turn_off" if any(k in text_lower for k in ["turn off", "switch off", "shut off", "stop"]) else "turn_on"
         elif any(k in text_lower for k in ["stop music", "stop playing", "shut up", "turn off music"]) or text_lower == "stop":
