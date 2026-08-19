@@ -1602,3 +1602,149 @@
 2026-08-19 15:23:01,071 [INFO] TTS Synthesizing: 'Wake up! Your alarm is going off.'
 2026-08-19 15:23:03,015 [INFO] Alarm cancelled.
 2026-08-19 15:23:03,033 [INFO] Syntra response: Alarm has been turned off.
+2026-08-19 15:24:06,865 [INFO] Initializing Syntra AI Home Assistant...
+2026-08-19 15:24:07,037 [INFO] Imported existing <module 'comtypes.gen' from 'C:\\Users\\Sophia\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-08-19 15:24:07,038 [INFO] Using writeable comtypes cache directory: 'C:\Users\Sophia\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2026-08-19 15:24:07,449 [INFO] TTS voice set to gender='female' -> voice id 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_ZIRA_11.0' (Microsoft Zira Desktop - English (United States))
+2026-08-19 15:24:07,759 [INFO] Audio mixer initialized.
+2026-08-19 15:24:07,760 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 15:24:09,283 [INFO] Launching Syntra GUI application...
+2026-08-19 15:24:09,833 [INFO] Delivering session greeting.
+2026-08-19 15:24:09,833 [INFO] Syntra response: Hello! I am Syntra, your home assistant. How can I assist you today?
+2026-08-19 15:24:09,834 [INFO] TTS Synthesizing: 'Hello! I am Syntra, your home assistant. How can I assist you today?'
+2026-08-19 15:24:16,441 [INFO] TTS voice set to gender='male' -> voice id 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_DAVID_11.0' (Microsoft David Desktop - English (United States))
+2026-08-19 15:24:16,441 [INFO] Syntra response: Voice switched to male.
+2026-08-19 15:24:16,496 [INFO] TTS Synthesizing: 'Voice switched to male.'
+2026-08-19 15:24:18,235 [INFO] TTS voice set to gender='female' -> voice id 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_ZIRA_11.0' (Microsoft Zira Desktop - English (United States))
+2026-08-19 15:24:18,235 [INFO] Syntra response: Voice switched to female.
+2026-08-19 15:24:18,295 [INFO] TTS Synthesizing: 'Voice switched to female.'
+2026-08-19 15:24:24,350 [INFO] Microphone listening...
+2026-08-19 15:24:29,877 [WARNING] Listening timed out waiting for input.
+2026-08-19 15:24:29,878 [INFO] Syntra response: I couldn't hear or recognize that. Please try again.
+2026-08-19 15:24:29,881 [INFO] TTS Synthesizing: 'I couldn't hear or recognize that. Please try again.'
+2026-08-19 15:24:36,502 [INFO] Microphone listening...
+2026-08-19 15:24:38,539 [INFO] Audio captured. Processing STT...
+2026-08-19 15:24:39,818 [INFO] STT Transcription: 'hello'
+2026-08-19 15:24:39,834 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'hello'
+2026-08-19 15:24:41,379 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 15:24:41,381 [INFO] Raw LLM Response: {
+  "actions": [],
+  "spoken_response": "Hello! How can I help you today?"
+}
+2026-08-19 15:24:41,381 [INFO] Command processed in 1.55s (actions applied: False)
+2026-08-19 15:24:41,382 [INFO] Syntra response: Hello! How can I help you today?
+2026-08-19 15:24:41,392 [INFO] TTS Synthesizing: 'Hello! How can I help you today?'
+2026-08-19 15:24:46,975 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'turn on both lights'
+2026-08-19 15:24:48,959 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 15:24:48,998 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "turn_on", "target": "living_room_light", "value": null, "query": null, "source": "local"},
+    {"action": "turn_on", "target": "kitchen_light", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "Both lights have been turned on."
+}
+2026-08-19 15:24:48,999 [INFO] Simulator state updated: living_room_light -> {'living_room_light': True, 'kitchen_light': False, 'thermostat': 20.0, 'front_door_lock': True, 'back_door': True, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 15:24:49,000 [INFO] Simulator state updated: kitchen_light -> {'living_room_light': True, 'kitchen_light': True, 'thermostat': 20.0, 'front_door_lock': True, 'back_door': True, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 15:24:49,061 [INFO] Command processed in 2.09s (actions applied: True)
+2026-08-19 15:24:49,062 [INFO] Syntra response: Both lights have been turned on.
+2026-08-19 15:24:49,123 [INFO] TTS Synthesizing: 'Both lights have been turned on.'
+2026-08-19 15:24:54,783 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'change thermostat to 26'
+2026-08-19 15:24:56,542 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 15:24:56,543 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "set_temp", "target": "thermostat", "value": 26, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The thermostat has been set to 26 degrees."
+}
+2026-08-19 15:24:56,543 [INFO] Simulator state updated: thermostat -> {'living_room_light': True, 'kitchen_light': True, 'thermostat': 26.0, 'front_door_lock': True, 'back_door': True, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 15:24:56,544 [INFO] Command processed in 1.76s (actions applied: True)
+2026-08-19 15:24:56,545 [INFO] Syntra response: The thermostat has been set to 26 degrees.
+2026-08-19 15:24:56,618 [INFO] TTS Synthesizing: 'The thermostat has been set to 26 degrees.'
+2026-08-19 15:25:03,902 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'unlock both doors'
+2026-08-19 15:25:05,837 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 15:25:05,837 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "unlock", "target": "front_door_lock", "value": null, "query": null, "source": "local"},
+    {"action": "unlock", "target": "back_door", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "Both doors have been unlocked."
+}
+2026-08-19 15:25:05,837 [INFO] Simulator state updated: front_door_lock -> {'living_room_light': True, 'kitchen_light': True, 'thermostat': 26.0, 'front_door_lock': False, 'back_door': True, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 15:25:05,838 [INFO] Simulator state updated: back_door -> {'living_room_light': True, 'kitchen_light': True, 'thermostat': 26.0, 'front_door_lock': False, 'back_door': False, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 15:25:05,866 [INFO] Command processed in 1.96s (actions applied: True)
+2026-08-19 15:25:05,866 [INFO] Syntra response: Both doors have been unlocked.
+2026-08-19 15:25:05,910 [INFO] TTS Synthesizing: 'Both doors have been unlocked.'
+2026-08-19 15:25:11,520 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'turn on both humidifier and ac'
+2026-08-19 15:25:13,564 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 15:25:13,566 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "turn_on", "target": "humidifier", "value": null, "query": null, "source": "local"},
+    {"action": "turn_on", "target": "air_conditioner", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "Both the humidifier and air conditioner have been turned on."
+}
+2026-08-19 15:25:13,566 [INFO] Simulator state updated: humidifier -> {'living_room_light': True, 'kitchen_light': True, 'thermostat': 26.0, 'front_door_lock': False, 'back_door': False, 'humidifier': True, 'air_conditioner': False}
+2026-08-19 15:25:13,567 [INFO] Simulator state updated: air_conditioner -> {'living_room_light': True, 'kitchen_light': True, 'thermostat': 26.0, 'front_door_lock': False, 'back_door': False, 'humidifier': True, 'air_conditioner': True}
+2026-08-19 15:25:13,647 [INFO] Command processed in 2.13s (actions applied: True)
+2026-08-19 15:25:13,648 [INFO] Syntra response: Both the humidifier and air conditioner have been turned on.
+2026-08-19 15:25:13,738 [INFO] TTS Synthesizing: 'Both the humidifier and air conditioner have been turned on.'
+2026-08-19 15:25:16,435 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'turn off ac'
+2026-08-19 15:25:17,917 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 15:25:17,917 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "turn_off", "target": "air_conditioner", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The air conditioner has been turned off."
+}
+2026-08-19 15:25:17,918 [INFO] Simulator state updated: air_conditioner -> {'living_room_light': True, 'kitchen_light': True, 'thermostat': 26.0, 'front_door_lock': False, 'back_door': False, 'humidifier': True, 'air_conditioner': False}
+2026-08-19 15:25:17,918 [INFO] Command processed in 1.48s (actions applied: True)
+2026-08-19 15:25:17,919 [INFO] Syntra response: The air conditioner has been turned off.
+2026-08-19 15:25:18,012 [INFO] TTS Synthesizing: 'The air conditioner has been turned off.'
+2026-08-19 15:25:22,004 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'play music'
+2026-08-19 15:25:23,685 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 15:25:23,685 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "play", "target": "music_player", "value": null, "query": "music player", "source": "local"}
+  ],
+  "spoken_response": "The music player is now playing."
+}
+2026-08-19 15:25:23,687 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 15:25:23,710 [INFO] Command processed in 1.71s (actions applied: True)
+2026-08-19 15:25:23,711 [INFO] Syntra response: Now playing Justin Bieber - SPEED DEMON.
+2026-08-19 15:25:23,746 [INFO] TTS Synthesizing: 'Now playing Justin Bieber - SPEED DEMON.'
+2026-08-19 15:25:25,453 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'next'
+2026-08-19 15:25:27,076 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 15:25:27,077 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "next", "target": "music_player", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The music has been moved to the next track."
+}
+2026-08-19 15:25:27,078 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 15:25:27,100 [INFO] Command processed in 1.65s (actions applied: True)
+2026-08-19 15:25:27,102 [INFO] Syntra response: Now playing Lauv - I Like Me Better.
+2026-08-19 15:25:27,592 [INFO] TTS Synthesizing: 'Now playing Lauv - I Like Me Better.'
+2026-08-19 15:25:30,328 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'stop'
+2026-08-19 15:25:31,835 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 15:25:31,836 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "stop", "target": "music_player", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The music has been stopped."
+}
+2026-08-19 15:25:31,836 [INFO] Command processed in 1.51s (actions applied: True)
+2026-08-19 15:25:31,837 [INFO] Syntra response: Stopped the music.
+2026-08-19 15:25:31,853 [INFO] TTS Synthesizing: 'Stopped the music.'
+2026-08-19 15:25:36,763 [INFO] Resolved alarm sound 'c:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\alarm\alarm.mp3' -> 'c:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\alarm\alarm.mp3'
+2026-08-19 15:25:36,763 [INFO] Alarm cancelled.
+2026-08-19 15:25:36,764 [INFO] Alarm thread sleeping for 24s until 15:26
+2026-08-19 15:25:36,764 [INFO] Alarm set for 15:26 using 'alarm.mp3'
+2026-08-19 15:25:36,765 [INFO] Command processed in 0.03s (actions applied: True)
+2026-08-19 15:25:36,765 [INFO] Syntra response: Alarm set for 15:26.
+2026-08-19 15:25:36,809 [INFO] TTS Synthesizing: 'Alarm set for 15:26.'
+2026-08-19 15:26:00,792 [INFO] Alarm triggered: playing 'alarm.mp3'
+2026-08-19 15:26:00,792 [INFO] Alarm fired, playing 'c:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\alarm\alarm.mp3'
+2026-08-19 15:26:00,803 [INFO] Syntra response: Wake up! Your alarm is going off.
+2026-08-19 15:26:00,838 [INFO] TTS Synthesizing: 'Wake up! Your alarm is going off.'
+2026-08-19 15:26:03,455 [INFO] Alarm cancelled.
+2026-08-19 15:26:03,481 [INFO] Syntra response: Alarm has been turned off.
