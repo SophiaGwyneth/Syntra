@@ -479,6 +479,7 @@ class SyntraGUI(ctk.CTk):
         on_device_toggle(target: str)
         on_thermostat_adjust(delta: float)
         on_lock_toggle()
+        on_voice_gender_change(gender: str)  # "male" | "female"
     """
 
     def __init__(
@@ -491,6 +492,7 @@ class SyntraGUI(ctk.CTk):
         on_music_control=None,
         on_alarm_set=None,
         on_alarm_stop=None,
+        on_voice_gender_change=None,
     ):
         super().__init__()
 
@@ -502,6 +504,7 @@ class SyntraGUI(ctk.CTk):
         self.on_music_control = on_music_control
         self.on_alarm_set = on_alarm_set
         self.on_alarm_stop = on_alarm_stop
+        self.on_voice_gender_change = on_voice_gender_change
         self._alarm_popup = None
 
         self.title("SYNTRA — AI Home Assistant")
@@ -555,13 +558,37 @@ class SyntraGUI(ctk.CTk):
         )
         self.voice_button.grid(row=3, column=0, sticky="ew", padx=24, pady=(6, 20))
 
+        voice_settings_label = ctk.CTkLabel(
+            panel, text="VOICE SETTINGS", font=("Consolas", 11, "bold"), text_color=FG_MUTED
+        )
+        voice_settings_label.grid(row=4, column=0, sticky="w", padx=24, pady=(0, 6))
+
+        voice_settings_frame = ctk.CTkFrame(panel, fg_color=BG_CARD, corner_radius=12)
+        voice_settings_frame.grid(row=5, column=0, sticky="ew", padx=16, pady=(0, 16))
+        voice_settings_frame.grid_columnconfigure(0, weight=1)
+
+        gender_row_label = ctk.CTkLabel(
+            voice_settings_frame, text="Voice Gender", font=("Segoe UI", 12),
+            text_color=FG_PRIMARY, anchor="w"
+        )
+        gender_row_label.grid(row=0, column=0, sticky="w", padx=14, pady=(12, 4))
+
+        self.voice_gender_selector = ctk.CTkSegmentedButton(
+            voice_settings_frame, values=["Female", "Male"],
+            selected_color=ACCENT_BLUE, selected_hover_color=ACCENT_CYAN,
+            unselected_color=BG_CARD_ACTIVE, text_color=FG_PRIMARY,
+            command=self._handle_voice_gender_change
+        )
+        self.voice_gender_selector.set("Female")
+        self.voice_gender_selector.grid(row=1, column=0, sticky="ew", padx=14, pady=(0, 12))
+
         devices_label = ctk.CTkLabel(
             panel, text="DEVICES", font=("Consolas", 11, "bold"), text_color=FG_MUTED
         )
-        devices_label.grid(row=4, column=0, sticky="w", padx=24, pady=(0, 6))
+        devices_label.grid(row=6, column=0, sticky="w", padx=24, pady=(0, 6))
 
         devices_frame = ctk.CTkFrame(panel, fg_color="transparent")
-        devices_frame.grid(row=5, column=0, sticky="ew", padx=16, pady=(0, 10))
+        devices_frame.grid(row=7, column=0, sticky="ew", padx=16, pady=(0, 10))
         devices_frame.grid_columnconfigure(0, weight=1)
 
         self.lr_card = DeviceCard(
@@ -609,7 +636,7 @@ class SyntraGUI(ctk.CTk):
         media_label = ctk.CTkLabel(
             panel, text="MEDIA", font=("Consolas", 11, "bold"), text_color=FG_MUTED
         )
-        media_label.grid(row=6, column=0, sticky="w", padx=24, pady=(4, 6))
+        media_label.grid(row=8, column=0, sticky="w", padx=24, pady=(4, 6))
 
         self.music_card = MusicCard(
             panel,
@@ -619,19 +646,19 @@ class SyntraGUI(ctk.CTk):
             on_previous=lambda: self._handle_music_control("previous"),
             on_volume=lambda delta: self._handle_music_control("volume", delta),
         )
-        self.music_card.grid(row=7, column=0, sticky="ew", padx=16, pady=(0, 16))
+        self.music_card.grid(row=9, column=0, sticky="ew", padx=16, pady=(0, 16))
 
         alarm_label = ctk.CTkLabel(
             panel, text="ALARM", font=("Consolas", 11, "bold"), text_color=FG_MUTED
         )
-        alarm_label.grid(row=8, column=0, sticky="w", padx=24, pady=(4, 6))
+        alarm_label.grid(row=10, column=0, sticky="w", padx=24, pady=(4, 6))
 
         self.alarm_card = AlarmCard(
             panel,
             on_set_alarm=self._handle_alarm_set,
             on_stop_alarm=self._handle_alarm_stop,
         )
-        self.alarm_card.grid(row=9, column=0, sticky="ew", padx=16, pady=(0, 16))
+        self.alarm_card.grid(row=11, column=0, sticky="ew", padx=16, pady=(0, 16))
 
     def _build_right_panel(self):
         right = ctk.CTkFrame(self, fg_color=BG_MAIN, corner_radius=0)
@@ -722,6 +749,10 @@ class SyntraGUI(ctk.CTk):
         if self.on_alarm_stop:
             self.on_alarm_stop()
         self.dismiss_alarm_popup()
+
+    def _handle_voice_gender_change(self, value: str):
+        if self.on_voice_gender_change:
+            self.on_voice_gender_change(value.strip().lower())
 
     # ------------------------------------------------------------------ #
     # Thread-safe public API (safe to call from ANY thread)
@@ -852,3 +883,13 @@ class SyntraGUI(ctk.CTk):
 
     def show_error(self, message: str):
         self.append_message("System", message, tag="error")
+
+    def set_voice_gender_display(self, gender: str):
+        """Syncs the sidebar's Voice Gender selector to reflect the pipeline's
+        actual current voice (e.g. after loading SYNTRA_VOICE_GENDER from
+        .env at startup). Safe to call from any thread."""
+        self.ui_call(self._set_voice_gender_display_impl, gender)
+
+    def _set_voice_gender_display_impl(self, gender: str):
+        label = "Male" if str(gender).strip().lower() == "male" else "Female"
+        self.voice_gender_selector.set(label)

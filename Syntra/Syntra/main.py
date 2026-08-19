@@ -69,6 +69,9 @@ class SyntraApp:
         logger.info("Initializing Syntra AI Home Assistant...")
 
         self.ai_engine = AIEngine()
+        # SYNTRA_VOICE_GENDER (.env) picks the initial TTS voice; it can
+        # also be changed live via the GUI sidebar or a typed/spoken
+        # command (see _process_command's voice-gender intercept).
         self.voice_pipeline = VoicePipeline()
         self.simulator = HomeSimulator(on_state_change=self._on_state_change)
         self.music_player = MusicPlayer(on_change=self._on_music_change)
@@ -84,12 +87,14 @@ class SyntraApp:
             on_music_control=self.handle_music_control,
             on_alarm_set=self.handle_alarm_set,
             on_alarm_stop=self.handle_alarm_stop,
+            on_voice_gender_change=self.handle_voice_gender_change,
         )
 
         # Prime the GUI with the simulator's + music player's initial state.
         self.gui.update_device_display(self.simulator.get_state())
         self.gui.update_music_display(self.music_player.get_now_playing())
         self.gui.update_alarm_display("No alarm set")
+        self.gui.set_voice_gender_display(self.voice_pipeline.get_voice_gender())
 
     # ------------------------------------------------------------------ #
     # Dual output helper: EVERY response goes to terminal + GUI log + TTS
@@ -157,6 +162,17 @@ class SyntraApp:
             alarm_stop_words = ["turn off", "stop", "cancel", "disable", "silence", "patayin", "off"]
             if "alarm" in lowered and any(word in lowered for word in alarm_stop_words):
                 response = self._handle_direct_alarm_stop()
+                self._respond(response)
+                return
+
+            # Direct Intercept: voice gender switch ("switch to male voice",
+            # "use the female voice", "change your voice to male", etc.) -
+            # handled deterministically here, same as the alarm intercept
+            # above, so it never depends on the LLM parsing it correctly.
+            gender_match = re.search(r'\b(male|female)\b', lowered)
+            voice_change_words = ["switch", "change", "set", "use", "make"]
+            if "voice" in lowered and gender_match and any(w in lowered for w in voice_change_words):
+                response = self._handle_direct_voice_gender_change(gender_match.group(1))
                 self._respond(response)
                 return
 
@@ -308,6 +324,37 @@ class SyntraApp:
         except Exception:
             logger.exception("Error while turning off the alarm")
             return "Could not turn off the alarm."
+
+    # ------------------------------------------------------------------ #
+    # Voice gender switching (typed/spoken command + GUI sidebar control)
+    # ------------------------------------------------------------------ #
+    def _handle_direct_voice_gender_change(self, gender: str) -> str:
+        """Applies a male/female voice switch triggered by typed or spoken
+        text (e.g. 'switch to male voice'). Never raises."""
+        try:
+            if self.voice_pipeline.set_voice_gender(gender):
+                self.gui.set_voice_gender_display(gender)
+                return f"Okay, switching to a {gender} voice."
+            return f"Sorry, I couldn't find a {gender} voice installed on this system."
+        except Exception:
+            logger.exception("Failed to switch voice gender to '%s'", gender)
+            return "Something went wrong while changing the voice."
+
+    def handle_voice_gender_change(self, gender: str):
+        """Callback from the GUI sidebar's Voice Gender selector, bypassing
+        the AI entirely."""
+        def task():
+            try:
+                if self.voice_pipeline.set_voice_gender(gender):
+                    self._respond(f"Voice switched to {gender}.", speak=True)
+                else:
+                    self.gui.show_error(f"No {gender} voice is installed on this system.")
+                    self.gui.set_voice_gender_display(self.voice_pipeline.get_voice_gender())
+            except Exception:
+                logger.exception("Failed to change voice gender to '%s'", gender)
+                self.gui.show_error("Could not change the voice.")
+
+        threading.Thread(target=task, daemon=True).start()
 
     def _apply_alarm_action(self, action_item, user_text: str = "") -> str:
         """Routes an 'alarm' action to AlarmClock."""

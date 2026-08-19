@@ -94,14 +94,14 @@
 2026-08-16 17:01:14,920 [INFO] Alarm cancelled.
 2026-08-16 17:01:14,921 [INFO] Syntra response: Alarm has been turned off.
 2026-08-16 17:01:14,925 [INFO] TTS Synthesizing: 'Alarm has been turned off.'
-2026-08-16 17:01:32,598 [INFO] Weather fetched for Imus City: 27.8°C, Overcast clouds
+2026-08-16 17:01:32,598 [INFO] Weather fetched for Imus City: 27.8ï¿½C, Overcast clouds
 2026-08-16 17:01:32,601 [INFO] Command processed in 1.01s (actions applied: True)
-2026-08-16 17:01:32,602 [INFO] Syntra response: It's currently 28°C and overcast clouds in Imus City, PH.
-2026-08-16 17:01:32,606 [INFO] TTS Synthesizing: 'It's currently 28°C and overcast clouds in Imus City, PH.'
-2026-08-16 17:01:51,098 [INFO] Weather fetched for Hong Kong: 30.4°C, Broken clouds
+2026-08-16 17:01:32,602 [INFO] Syntra response: It's currently 28ï¿½C and overcast clouds in Imus City, PH.
+2026-08-16 17:01:32,606 [INFO] TTS Synthesizing: 'It's currently 28ï¿½C and overcast clouds in Imus City, PH.'
+2026-08-16 17:01:51,098 [INFO] Weather fetched for Hong Kong: 30.4ï¿½C, Broken clouds
 2026-08-16 17:01:51,101 [INFO] Command processed in 0.94s (actions applied: True)
-2026-08-16 17:01:51,102 [INFO] Syntra response: It's currently 30°C and broken clouds in Hong Kong, HK.
-2026-08-16 17:01:51,112 [INFO] TTS Synthesizing: 'It's currently 30°C and broken clouds in Hong Kong, HK.'
+2026-08-16 17:01:51,102 [INFO] Syntra response: It's currently 30ï¿½C and broken clouds in Hong Kong, HK.
+2026-08-16 17:01:51,112 [INFO] TTS Synthesizing: 'It's currently 30ï¿½C and broken clouds in Hong Kong, HK.'
 2026-08-16 17:02:18,678 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'play music'
 2026-08-16 17:02:32,633 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
 2026-08-16 17:02:32,635 [INFO] Raw LLM Response: {
@@ -222,14 +222,14 @@
 2026-08-16 20:02:43,298 [INFO] Command processed in 1.98s (actions applied: True)
 2026-08-16 20:02:43,299 [INFO] Syntra response: Both lights have been turned on.
 2026-08-16 20:02:43,337 [INFO] TTS Synthesizing: 'Both lights have been turned on.'
-2026-08-16 20:02:56,823 [INFO] Weather fetched for Imus City: 26.9°C, Light rain
+2026-08-16 20:02:56,823 [INFO] Weather fetched for Imus City: 26.9ï¿½C, Light rain
 2026-08-16 20:02:56,848 [INFO] Command processed in 0.58s (actions applied: True)
-2026-08-16 20:02:56,848 [INFO] Syntra response: It's currently 27°C and light rain in Imus City, PH.
-2026-08-16 20:02:56,852 [INFO] TTS Synthesizing: 'It's currently 27°C and light rain in Imus City, PH.'
-2026-08-16 20:03:08,598 [INFO] Weather fetched for Manila: 26.9°C, Moderate rain
+2026-08-16 20:02:56,848 [INFO] Syntra response: It's currently 27ï¿½C and light rain in Imus City, PH.
+2026-08-16 20:02:56,852 [INFO] TTS Synthesizing: 'It's currently 27ï¿½C and light rain in Imus City, PH.'
+2026-08-16 20:03:08,598 [INFO] Weather fetched for Manila: 26.9ï¿½C, Moderate rain
 2026-08-16 20:03:08,604 [INFO] Command processed in 0.59s (actions applied: True)
-2026-08-16 20:03:08,606 [INFO] Syntra response: It's currently 27°C and moderate rain in Manila, PH.
-2026-08-16 20:03:08,612 [INFO] TTS Synthesizing: 'It's currently 27°C and moderate rain in Manila, PH.'
+2026-08-16 20:03:08,606 [INFO] Syntra response: It's currently 27ï¿½C and moderate rain in Manila, PH.
+2026-08-16 20:03:08,612 [INFO] TTS Synthesizing: 'It's currently 27ï¿½C and moderate rain in Manila, PH.'
 2026-08-16 20:03:20,494 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'play music'
 2026-08-16 20:03:22,038 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
 2026-08-16 20:03:22,039 [INFO] Raw LLM Response: {
@@ -364,10 +364,10 @@
 2026-08-16 20:46:50,977 [INFO] TTS Synthesizing: 'Hello! I am Syntra, your home assistant. How can I assist you today?'
 2026-08-16 20:46:51,182 [INFO] Imported existing <module 'comtypes.gen' from 'C:\\Users\\Sophia\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
 2026-08-16 20:46:51,182 [INFO] Using writeable comtypes cache directory: 'C:\Users\Sophia\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
-2026-08-16 20:47:07,724 [INFO] Weather fetched for Bacoor City: 27.1°C, Moderate rain
+2026-08-16 20:47:07,724 [INFO] Weather fetched for Bacoor City: 27.1ï¿½C, Moderate rain
 2026-08-16 20:47:07,743 [INFO] Command processed in 0.58s (actions applied: True)
-2026-08-16 20:47:07,744 [INFO] Syntra response: It's currently 27°C and moderate rain in Bacoor City, PH.
-2026-08-16 20:47:07,749 [INFO] TTS Synthesizing: 'It's currently 27°C and moderate rain in Bacoor City, PH.'
+2026-08-16 20:47:07,744 [INFO] Syntra response: It's currently 27ï¿½C and moderate rain in Bacoor City, PH.
+2026-08-16 20:47:07,749 [INFO] TTS Synthesizing: 'It's currently 27ï¿½C and moderate rain in Bacoor City, PH.'
 2026-08-16 20:47:16,678 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'what time is it today?'
 2026-08-16 20:47:24,001 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
 2026-08-16 20:47:24,005 [INFO] Raw LLM Response: {
@@ -452,10 +452,10 @@
 2026-08-16 21:06:19,351 [INFO] Alarm cancelled before it triggered.
 2026-08-16 21:06:19,352 [INFO] Alarm cancelled.
 2026-08-16 21:06:19,364 [INFO] Syntra response: Alarm has been turned off.
-2026-08-16 21:06:28,068 [INFO] Weather fetched for Manila: 26.8°C, Moderate rain
+2026-08-16 21:06:28,068 [INFO] Weather fetched for Manila: 26.8ï¿½C, Moderate rain
 2026-08-16 21:06:28,075 [INFO] Command processed in 0.93s (actions applied: True)
-2026-08-16 21:06:28,077 [INFO] Syntra response: It's currently 27°C and moderate rain in Manila, PH.
-2026-08-16 21:06:28,081 [INFO] TTS Synthesizing: 'It's currently 27°C and moderate rain in Manila, PH.'
+2026-08-16 21:06:28,077 [INFO] Syntra response: It's currently 27ï¿½C and moderate rain in Manila, PH.
+2026-08-16 21:06:28,081 [INFO] TTS Synthesizing: 'It's currently 27ï¿½C and moderate rain in Manila, PH.'
 2026-08-16 21:06:31,063 [INFO] Command processed in 0.0s (actions applied: True)
 2026-08-16 21:06:31,069 [INFO] Syntra response: It's 9:06 PM on Sunday, August 16.
 2026-08-16 21:06:34,148 [INFO] TTS Synthesizing: 'It's 9:06 PM on Sunday, August 16.'
@@ -872,50 +872,50 @@
 2026-08-16 21:33:12,875 [INFO] Command processed in 0.91s (actions applied: True)
 2026-08-16 21:33:12,875 [INFO] Syntra response: I couldn't find a place called 'South Korea'.
 2026-08-16 21:33:12,880 [INFO] TTS Synthesizing: 'I couldn't find a place called 'South Korea'.'
-2026-08-16 21:33:22,319 [INFO] Weather fetched for Hong Kong: 29.1°C, Scattered clouds
+2026-08-16 21:33:22,319 [INFO] Weather fetched for Hong Kong: 29.1ï¿½C, Scattered clouds
 2026-08-16 21:33:22,323 [INFO] Command processed in 0.5s (actions applied: True)
-2026-08-16 21:33:22,325 [INFO] Syntra response: It's currently 29°C and scattered clouds in Hong Kong, HK.
-2026-08-16 21:33:22,331 [INFO] TTS Synthesizing: 'It's currently 29°C and scattered clouds in Hong Kong, HK.'
-2026-08-16 21:33:32,302 [INFO] Weather fetched for Korea: 20.4°C, Overcast clouds
+2026-08-16 21:33:22,325 [INFO] Syntra response: It's currently 29ï¿½C and scattered clouds in Hong Kong, HK.
+2026-08-16 21:33:22,331 [INFO] TTS Synthesizing: 'It's currently 29ï¿½C and scattered clouds in Hong Kong, HK.'
+2026-08-16 21:33:32,302 [INFO] Weather fetched for Korea: 20.4ï¿½C, Overcast clouds
 2026-08-16 21:33:32,305 [INFO] Command processed in 0.57s (actions applied: True)
-2026-08-16 21:33:32,310 [INFO] Syntra response: It's currently 20°C and overcast clouds in Korea, PL.
-2026-08-16 21:33:32,314 [INFO] TTS Synthesizing: 'It's currently 20°C and overcast clouds in Korea, PL.'
-2026-08-16 21:33:46,791 [INFO] Weather fetched for New York: 22.8°C, Overcast clouds
+2026-08-16 21:33:32,310 [INFO] Syntra response: It's currently 20ï¿½C and overcast clouds in Korea, PL.
+2026-08-16 21:33:32,314 [INFO] TTS Synthesizing: 'It's currently 20ï¿½C and overcast clouds in Korea, PL.'
+2026-08-16 21:33:46,791 [INFO] Weather fetched for New York: 22.8ï¿½C, Overcast clouds
 2026-08-16 21:33:46,792 [INFO] Command processed in 0.52s (actions applied: True)
-2026-08-16 21:33:46,792 [INFO] Syntra response: It's currently 23°C and overcast clouds in New York, US.
-2026-08-16 21:33:46,796 [INFO] TTS Synthesizing: 'It's currently 23°C and overcast clouds in New York, US.'
+2026-08-16 21:33:46,792 [INFO] Syntra response: It's currently 23ï¿½C and overcast clouds in New York, US.
+2026-08-16 21:33:46,796 [INFO] TTS Synthesizing: 'It's currently 23ï¿½C and overcast clouds in New York, US.'
 2026-08-16 21:36:06,780 [INFO] Resolved 'japan' -> timezone 'Asia/Tokyo' -> 10:36 PM
 2026-08-16 21:36:06,780 [INFO] Command processed in 0.43s (actions applied: True)
 2026-08-16 21:36:06,780 [INFO] Syntra response: It's 10:36 PM on Sunday, August 16 in japan.
 2026-08-16 21:36:06,783 [INFO] TTS Synthesizing: 'It's 10:36 PM on Sunday, August 16 in japan.'
-2026-08-16 21:36:16,676 [INFO] Weather fetched for Seoul: 25.1°C, Light rain
+2026-08-16 21:36:16,676 [INFO] Weather fetched for Seoul: 25.1ï¿½C, Light rain
 2026-08-16 21:36:16,679 [INFO] Command processed in 0.51s (actions applied: True)
-2026-08-16 21:36:16,681 [INFO] Syntra response: It's currently 25°C and light rain in Seoul, KR.
-2026-08-16 21:36:16,697 [INFO] TTS Synthesizing: 'It's currently 25°C and light rain in Seoul, KR.'
+2026-08-16 21:36:16,681 [INFO] Syntra response: It's currently 25ï¿½C and light rain in Seoul, KR.
+2026-08-16 21:36:16,697 [INFO] TTS Synthesizing: 'It's currently 25ï¿½C and light rain in Seoul, KR.'
 2026-08-16 21:36:25,421 [WARNING] Time lookup failed for 'cambodia': I don't know the timezone for 'cambodia'.
 2026-08-16 21:36:25,422 [INFO] Command processed in 0.0s (actions applied: True)
 2026-08-16 21:36:25,422 [INFO] Syntra response: I don't know the timezone for 'cambodia'.
 2026-08-16 21:36:25,437 [INFO] TTS Synthesizing: 'I don't know the timezone for 'cambodia'.'
-2026-08-16 21:36:36,875 [INFO] Weather fetched for France: 26.6°C, Overcast clouds
+2026-08-16 21:36:36,875 [INFO] Weather fetched for France: 26.6ï¿½C, Overcast clouds
 2026-08-16 21:36:36,879 [INFO] Command processed in 0.55s (actions applied: True)
-2026-08-16 21:36:36,880 [INFO] Syntra response: It's currently 27°C and overcast clouds in France, CI.
-2026-08-16 21:36:36,885 [INFO] TTS Synthesizing: 'It's currently 27°C and overcast clouds in France, CI.'
-2026-08-16 21:36:55,201 [INFO] Weather fetched for Phnom Penh: 27.5°C, Overcast clouds
+2026-08-16 21:36:36,880 [INFO] Syntra response: It's currently 27ï¿½C and overcast clouds in France, CI.
+2026-08-16 21:36:36,885 [INFO] TTS Synthesizing: 'It's currently 27ï¿½C and overcast clouds in France, CI.'
+2026-08-16 21:36:55,201 [INFO] Weather fetched for Phnom Penh: 27.5ï¿½C, Overcast clouds
 2026-08-16 21:36:55,204 [INFO] Command processed in 0.6s (actions applied: True)
-2026-08-16 21:36:55,204 [INFO] Syntra response: It's currently 28°C and overcast clouds in Phnom Penh, KH.
-2026-08-16 21:36:55,206 [INFO] TTS Synthesizing: 'It's currently 28°C and overcast clouds in Phnom Penh, KH.'
+2026-08-16 21:36:55,204 [INFO] Syntra response: It's currently 28ï¿½C and overcast clouds in Phnom Penh, KH.
+2026-08-16 21:36:55,206 [INFO] TTS Synthesizing: 'It's currently 28ï¿½C and overcast clouds in Phnom Penh, KH.'
 2026-08-16 21:37:11,895 [INFO] Resolved 'bagui' -> timezone 'Africa/Bangui' -> 2:37 PM
 2026-08-16 21:37:11,896 [INFO] Command processed in 0.02s (actions applied: True)
 2026-08-16 21:37:11,897 [INFO] Syntra response: It's 2:37 PM on Sunday, August 16 in bagui.
 2026-08-16 21:37:11,908 [INFO] TTS Synthesizing: 'It's 2:37 PM on Sunday, August 16 in bagui.'
-2026-08-16 21:37:24,897 [INFO] Weather fetched for Baguio City: 17.5°C, Light rain
+2026-08-16 21:37:24,897 [INFO] Weather fetched for Baguio City: 17.5ï¿½C, Light rain
 2026-08-16 21:37:24,901 [INFO] Command processed in 0.52s (actions applied: True)
-2026-08-16 21:37:24,902 [INFO] Syntra response: It's currently 18°C and light rain in Baguio City, PH.
-2026-08-16 21:37:24,907 [INFO] TTS Synthesizing: 'It's currently 18°C and light rain in Baguio City, PH.'
-2026-08-16 21:37:53,163 [INFO] Weather fetched for Pyongyang: 24.3°C, Overcast clouds
+2026-08-16 21:37:24,902 [INFO] Syntra response: It's currently 18ï¿½C and light rain in Baguio City, PH.
+2026-08-16 21:37:24,907 [INFO] TTS Synthesizing: 'It's currently 18ï¿½C and light rain in Baguio City, PH.'
+2026-08-16 21:37:53,163 [INFO] Weather fetched for Pyongyang: 24.3ï¿½C, Overcast clouds
 2026-08-16 21:37:53,165 [INFO] Command processed in 0.62s (actions applied: True)
-2026-08-16 21:37:53,167 [INFO] Syntra response: It's currently 24°C and overcast clouds in Pyongyang, KP.
-2026-08-16 21:37:53,173 [INFO] TTS Synthesizing: 'It's currently 24°C and overcast clouds in Pyongyang, KP.'
+2026-08-16 21:37:53,167 [INFO] Syntra response: It's currently 24ï¿½C and overcast clouds in Pyongyang, KP.
+2026-08-16 21:37:53,173 [INFO] TTS Synthesizing: 'It's currently 24ï¿½C and overcast clouds in Pyongyang, KP.'
 2026-08-16 21:59:47,307 [INFO] Initializing Syntra AI Home Assistant...
 2026-08-16 21:59:48,215 [INFO] Audio mixer initialized.
 2026-08-16 21:59:48,229 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
@@ -945,3 +945,660 @@
 2026-08-16 22:00:35,715 [INFO] Command processed in 0.0s (actions applied: True)
 2026-08-16 22:00:35,715 [INFO] Syntra response: It's 6:00 PM on Sunday, August 16 in UAE.
 2026-08-16 22:00:35,723 [INFO] TTS Synthesizing: 'It's 6:00 PM on Sunday, August 16 in UAE.'
+2026-08-19 13:17:33,257 [INFO] Initializing Syntra AI Home Assistant...
+2026-08-19 13:17:35,399 [INFO] Audio mixer initialized.
+2026-08-19 13:17:35,401 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 13:17:38,162 [INFO] Launching Syntra GUI application...
+2026-08-19 13:17:38,662 [INFO] Delivering session greeting.
+2026-08-19 13:17:38,663 [INFO] Syntra response: Hello! I am Syntra, your home assistant. How can I assist you today?
+2026-08-19 13:17:38,664 [INFO] TTS Synthesizing: 'Hello! I am Syntra, your home assistant. How can I assist you today?'
+2026-08-19 13:17:38,857 [INFO] Imported existing <module 'comtypes.gen' from 'C:\\Users\\Sophia\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-08-19 13:17:38,857 [INFO] Using writeable comtypes cache directory: 'C:\Users\Sophia\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2026-08-19 13:19:51,901 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'hello'
+2026-08-19 13:19:59,829 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:19:59,832 [INFO] Raw LLM Response: {
+  "actions": [],
+  "spoken_response": "Hello! How can I assist you today?"
+}
+2026-08-19 13:19:59,833 [INFO] Command processed in 7.93s (actions applied: False)
+2026-08-19 13:19:59,833 [INFO] Syntra response: Hello! How can I assist you today?
+2026-08-19 13:19:59,835 [INFO] TTS Synthesizing: 'Hello! How can I assist you today?'
+2026-08-19 13:24:46,635 [INFO] Initializing Syntra AI Home Assistant...
+2026-08-19 13:24:47,239 [INFO] Audio mixer initialized.
+2026-08-19 13:24:47,241 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 13:24:48,610 [INFO] Launching Syntra GUI application...
+2026-08-19 13:24:49,111 [INFO] Delivering session greeting.
+2026-08-19 13:24:49,111 [INFO] Syntra response: Hello! I am Syntra, your home assistant. How can I assist you today?
+2026-08-19 13:24:49,112 [INFO] TTS Synthesizing: 'Hello! I am Syntra, your home assistant. How can I assist you today?'
+2026-08-19 13:24:49,237 [INFO] Imported existing <module 'comtypes.gen' from 'C:\\Users\\Sophia\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-08-19 13:24:49,237 [INFO] Using writeable comtypes cache directory: 'C:\Users\Sophia\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2026-08-19 13:24:49,561 [INFO] Discovered 2 installed TTS voice(s).
+2026-08-19 13:25:03,550 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'can you change voice gender?'
+2026-08-19 13:25:06,001 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:25:06,003 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "set_gender", "target": "voice", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The voice gender has been changed."
+}
+2026-08-19 13:25:06,004 [WARNING] Ignoring action for unknown target: voice
+2026-08-19 13:25:06,004 [INFO] Command processed in 2.45s (actions applied: False)
+2026-08-19 13:25:06,005 [INFO] Syntra response: I heard the command but couldn't tell what value to set - could you repeat it with a specific number?
+2026-08-19 13:25:06,015 [INFO] TTS Synthesizing: 'I heard the command but couldn't tell what value to set - could you repeat it with a specific number?'
+2026-08-19 13:25:14,067 [INFO] Voice gender switched to 'male'.
+2026-08-19 13:25:14,075 [INFO] Syntra response: Voice switched to male.
+2026-08-19 13:25:14,085 [INFO] TTS Synthesizing: 'Voice switched to male.'
+2026-08-19 13:25:22,914 [INFO] Voice gender switched to 'female'.
+2026-08-19 13:25:22,929 [INFO] Syntra response: Voice switched to female.
+2026-08-19 13:25:22,939 [INFO] TTS Synthesizing: 'Voice switched to female.'
+2026-08-19 13:26:18,651 [INFO] Initializing Syntra AI Home Assistant...
+2026-08-19 13:26:19,132 [INFO] Audio mixer initialized.
+2026-08-19 13:26:19,135 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 13:26:20,582 [INFO] Launching Syntra GUI application...
+2026-08-19 13:26:21,083 [INFO] Delivering session greeting.
+2026-08-19 13:26:21,083 [INFO] Syntra response: Hello! I am Syntra, your home assistant. How can I assist you today?
+2026-08-19 13:26:21,085 [INFO] TTS Synthesizing: 'Hello! I am Syntra, your home assistant. How can I assist you today?'
+2026-08-19 13:26:21,215 [INFO] Imported existing <module 'comtypes.gen' from 'C:\\Users\\Sophia\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-08-19 13:26:21,216 [INFO] Using writeable comtypes cache directory: 'C:\Users\Sophia\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2026-08-19 13:26:21,520 [INFO] Discovered 2 installed TTS voice(s).
+2026-08-19 13:26:27,205 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'turn on both lights'
+2026-08-19 13:26:29,195 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:26:29,201 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "turn_on", "target": "living_room_light", "value": null, "query": null, "source": "local"},
+    {"action": "turn_on", "target": "kitchen_light", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "Both lights have been turned on."
+}
+2026-08-19 13:26:29,201 [INFO] Simulator state updated: living_room_light -> {'living_room_light': True, 'kitchen_light': False, 'thermostat': 20.0, 'front_door_lock': True, 'back_door': True, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 13:26:29,203 [INFO] Simulator state updated: kitchen_light -> {'living_room_light': True, 'kitchen_light': True, 'thermostat': 20.0, 'front_door_lock': True, 'back_door': True, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 13:26:29,279 [INFO] Command processed in 2.07s (actions applied: True)
+2026-08-19 13:26:29,280 [INFO] Syntra response: Both lights have been turned on.
+2026-08-19 13:26:29,310 [INFO] TTS Synthesizing: 'Both lights have been turned on.'
+2026-08-19 13:26:34,931 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'change thermostat to 18'
+2026-08-19 13:26:36,769 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:26:36,770 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "set_temp", "target": "thermostat", "value": 18, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The thermostat has been set to 18 degrees."
+}
+2026-08-19 13:26:36,771 [INFO] Simulator state updated: thermostat -> {'living_room_light': True, 'kitchen_light': True, 'thermostat': 18.0, 'front_door_lock': True, 'back_door': True, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 13:26:36,771 [INFO] Command processed in 1.84s (actions applied: True)
+2026-08-19 13:26:36,772 [INFO] Syntra response: The thermostat has been set to 18 degrees.
+2026-08-19 13:26:36,860 [INFO] TTS Synthesizing: 'The thermostat has been set to 18 degrees.'
+2026-08-19 13:26:42,008 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'unlock both doors'
+2026-08-19 13:26:43,921 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:26:43,921 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "unlock", "target": "front_door_lock", "value": null, "query": null, "source": "local"},
+    {"action": "unlock", "target": "back_door", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "Both doors have been unlocked."
+}
+2026-08-19 13:26:43,921 [INFO] Simulator state updated: front_door_lock -> {'living_room_light': True, 'kitchen_light': True, 'thermostat': 18.0, 'front_door_lock': False, 'back_door': True, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 13:26:43,922 [INFO] Simulator state updated: back_door -> {'living_room_light': True, 'kitchen_light': True, 'thermostat': 18.0, 'front_door_lock': False, 'back_door': False, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 13:26:43,965 [INFO] Command processed in 1.96s (actions applied: True)
+2026-08-19 13:26:43,965 [INFO] Syntra response: Both doors have been unlocked.
+2026-08-19 13:26:44,010 [INFO] TTS Synthesizing: 'Both doors have been unlocked.'
+2026-08-19 13:26:48,025 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'turn off living lights'
+2026-08-19 13:26:49,666 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:26:49,667 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "turn_off", "target": "living_room_light", "value": null, "query": "turn off living lights", "source": "local"}
+  ],
+  "spoken_response": "The living room lights have been turned off."
+}
+2026-08-19 13:26:49,667 [INFO] Simulator state updated: living_room_light -> {'living_room_light': False, 'kitchen_light': True, 'thermostat': 18.0, 'front_door_lock': False, 'back_door': False, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 13:26:49,668 [INFO] Command processed in 1.64s (actions applied: True)
+2026-08-19 13:26:49,668 [INFO] Syntra response: The living room lights have been turned off.
+2026-08-19 13:26:49,762 [INFO] TTS Synthesizing: 'The living room lights have been turned off.'
+2026-08-19 13:26:53,135 [INFO] Microphone listening...
+2026-08-19 13:26:55,073 [INFO] Audio captured. Processing STT...
+2026-08-19 13:26:55,754 [INFO] STT Transcription: 'kitchen light'
+2026-08-19 13:26:55,808 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'kitchen light'
+2026-08-19 13:26:57,379 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:26:57,380 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "turn_on", "target": "kitchen_light", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The kitchen light has been turned on."
+}
+2026-08-19 13:26:57,380 [INFO] Simulator state updated: kitchen_light -> {'living_room_light': False, 'kitchen_light': True, 'thermostat': 18.0, 'front_door_lock': False, 'back_door': False, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 13:26:57,381 [INFO] Command processed in 1.58s (actions applied: True)
+2026-08-19 13:26:57,381 [INFO] Syntra response: The kitchen light has been turned on.
+2026-08-19 13:26:57,426 [INFO] TTS Synthesizing: 'The kitchen light has been turned on.'
+2026-08-19 13:27:00,277 [INFO] Microphone listening...
+2026-08-19 13:27:03,338 [INFO] Audio captured. Processing STT...
+2026-08-19 13:27:03,953 [INFO] STT Transcription: 'turn off kitchen light'
+2026-08-19 13:27:03,994 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'turn off kitchen light'
+2026-08-19 13:27:05,621 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:27:05,622 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "turn_off", "target": "kitchen_light", "value": null, "query": "turn off kitchen light", "source": "local"}
+  ],
+  "spoken_response": "The kitchen light has been turned off."
+}
+2026-08-19 13:27:05,622 [INFO] Simulator state updated: kitchen_light -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 18.0, 'front_door_lock': False, 'back_door': False, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 13:27:05,623 [INFO] Command processed in 1.63s (actions applied: True)
+2026-08-19 13:27:05,623 [INFO] Syntra response: The kitchen light has been turned off.
+2026-08-19 13:27:05,674 [INFO] TTS Synthesizing: 'The kitchen light has been turned off.'
+2026-08-19 13:27:09,716 [INFO] Microphone listening...
+2026-08-19 13:27:14,675 [INFO] Audio captured. Processing STT...
+2026-08-19 13:27:15,685 [INFO] STT Transcription: 'turn on both the humidifier and the aircon'
+2026-08-19 13:27:15,714 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'turn on both the humidifier and the aircon'
+2026-08-19 13:27:17,818 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:27:17,819 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "turn_on", "target": "humidifier", "value": null, "query": null, "source": "local"},
+    {"action": "turn_on", "target": "air_conditioner", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "Both the humidifier and the air conditioner have been turned on."
+}
+2026-08-19 13:27:17,820 [INFO] Simulator state updated: humidifier -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 18.0, 'front_door_lock': False, 'back_door': False, 'humidifier': True, 'air_conditioner': False}
+2026-08-19 13:27:17,820 [INFO] Simulator state updated: air_conditioner -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 18.0, 'front_door_lock': False, 'back_door': False, 'humidifier': True, 'air_conditioner': True}
+2026-08-19 13:27:17,880 [INFO] Command processed in 2.17s (actions applied: True)
+2026-08-19 13:27:17,881 [INFO] Syntra response: Both the humidifier and the air conditioner have been turned on.
+2026-08-19 13:27:17,929 [INFO] TTS Synthesizing: 'Both the humidifier and the air conditioner have been turned on.'
+2026-08-19 13:27:19,714 [INFO] Microphone listening...
+2026-08-19 13:27:23,860 [INFO] Audio captured. Processing STT...
+2026-08-19 13:27:24,592 [INFO] STT Transcription: 'lock the phone do'
+2026-08-19 13:27:24,623 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'lock the phone do'
+2026-08-19 13:27:26,158 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:27:26,159 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "lock", "target": "front_door_lock", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The front door has been locked."
+}
+2026-08-19 13:27:26,159 [INFO] Simulator state updated: front_door_lock -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 18.0, 'front_door_lock': True, 'back_door': False, 'humidifier': True, 'air_conditioner': True}
+2026-08-19 13:27:26,160 [INFO] Command processed in 1.54s (actions applied: True)
+2026-08-19 13:27:26,161 [INFO] Syntra response: The front door has been locked.
+2026-08-19 13:27:26,271 [INFO] TTS Synthesizing: 'The front door has been locked.'
+2026-08-19 13:27:28,700 [INFO] Microphone listening...
+2026-08-19 13:27:31,688 [INFO] Audio captured. Processing STT...
+2026-08-19 13:27:32,308 [INFO] STT Transcription: 'lock phone doors'
+2026-08-19 13:27:32,345 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'lock phone doors'
+2026-08-19 13:27:33,942 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:27:33,942 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "lock", "target": "front_door_lock", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The front door has been locked."
+}
+2026-08-19 13:27:33,942 [INFO] Simulator state updated: front_door_lock -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 18.0, 'front_door_lock': True, 'back_door': False, 'humidifier': True, 'air_conditioner': True}
+2026-08-19 13:27:33,943 [INFO] Command processed in 1.6s (actions applied: True)
+2026-08-19 13:27:33,943 [INFO] Syntra response: The front door has been locked.
+2026-08-19 13:27:34,011 [INFO] TTS Synthesizing: 'The front door has been locked.'
+2026-08-19 13:27:36,190 [INFO] Microphone listening...
+2026-08-19 13:27:39,406 [INFO] Audio captured. Processing STT...
+2026-08-19 13:27:40,091 [INFO] STT Transcription: 'lock both doors'
+2026-08-19 13:27:40,127 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'lock both doors'
+2026-08-19 13:27:42,082 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:27:42,083 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "lock", "target": "front_door_lock", "value": null, "query": null, "source": "local"},
+    {"action": "lock", "target": "back_door", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "Both doors have been locked."
+}
+2026-08-19 13:27:42,083 [INFO] Simulator state updated: front_door_lock -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 18.0, 'front_door_lock': True, 'back_door': False, 'humidifier': True, 'air_conditioner': True}
+2026-08-19 13:27:42,083 [INFO] Simulator state updated: back_door -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 18.0, 'front_door_lock': True, 'back_door': True, 'humidifier': True, 'air_conditioner': True}
+2026-08-19 13:27:42,110 [INFO] Command processed in 1.99s (actions applied: True)
+2026-08-19 13:27:42,110 [INFO] Syntra response: Both doors have been locked.
+2026-08-19 13:27:42,151 [INFO] TTS Synthesizing: 'Both doors have been locked.'
+2026-08-19 13:27:44,111 [INFO] Microphone listening...
+2026-08-19 13:27:49,660 [WARNING] Listening timed out waiting for input.
+2026-08-19 13:27:49,662 [INFO] Syntra response: I couldn't hear or recognize that. Please try again.
+2026-08-19 13:27:49,684 [INFO] TTS Synthesizing: 'I couldn't hear or recognize that. Please try again.'
+2026-08-19 13:27:54,112 [INFO] Microphone listening...
+2026-08-19 13:27:56,099 [INFO] Audio captured. Processing STT...
+2026-08-19 13:27:56,511 [INFO] STT Transcription: 'play'
+2026-08-19 13:27:56,546 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'play'
+2026-08-19 13:27:58,101 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:27:58,101 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "play", "target": "music_player", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The music has been played."
+}
+2026-08-19 13:27:58,103 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 13:27:58,144 [INFO] Command processed in 1.61s (actions applied: True)
+2026-08-19 13:27:58,144 [INFO] Syntra response: Now playing Backstreet Boys - Shape of My Heart.
+2026-08-19 13:27:58,156 [INFO] TTS Synthesizing: 'Now playing Backstreet Boys - Shape of My Heart.'
+2026-08-19 13:28:01,713 [INFO] Microphone listening...
+2026-08-19 13:28:07,266 [WARNING] Listening timed out waiting for input.
+2026-08-19 13:28:07,270 [INFO] Syntra response: I couldn't hear or recognize that. Please try again.
+2026-08-19 13:28:07,288 [INFO] TTS Synthesizing: 'I couldn't hear or recognize that. Please try again.'
+2026-08-19 13:28:11,769 [INFO] Microphone listening...
+2026-08-19 13:28:18,010 [INFO] Audio captured. Processing STT...
+2026-08-19 13:28:18,450 [INFO] STT Transcription: 'next song'
+2026-08-19 13:28:18,489 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'next song'
+2026-08-19 13:28:20,125 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:28:20,126 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "next", "target": "music_player", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The next song has started playing."
+}
+2026-08-19 13:28:20,127 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 13:28:20,145 [INFO] Command processed in 1.66s (actions applied: True)
+2026-08-19 13:28:20,145 [INFO] Syntra response: Now playing Justin Bieber - SPEED DEMON.
+2026-08-19 13:28:20,169 [INFO] TTS Synthesizing: 'Now playing Justin Bieber - SPEED DEMON.'
+2026-08-19 13:28:22,222 [INFO] Microphone listening...
+2026-08-19 13:28:24,790 [INFO] Audio captured. Processing STT...
+2026-08-19 13:28:25,355 [INFO] STT Transcription: 'stop music'
+2026-08-19 13:28:25,392 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'stop music'
+2026-08-19 13:28:26,906 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:28:26,906 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "stop", "target": "music_player", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The music has been stopped."
+}
+2026-08-19 13:28:26,907 [INFO] Command processed in 1.52s (actions applied: True)
+2026-08-19 13:28:26,907 [INFO] Syntra response: Stopped the music.
+2026-08-19 13:28:26,923 [INFO] TTS Synthesizing: 'Stopped the music.'
+2026-08-19 13:28:31,595 [INFO] Microphone listening...
+2026-08-19 13:28:34,882 [INFO] Audio captured. Processing STT...
+2026-08-19 13:28:35,405 [INFO] STT Transcription: 'set an alarm for 1'
+2026-08-19 13:28:35,455 [INFO] Resolved alarm sound 'c:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\alarm\alarm.mp3' -> 'c:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\alarm\alarm.mp3'
+2026-08-19 13:28:35,456 [INFO] Alarm cancelled.
+2026-08-19 13:28:35,457 [INFO] Alarm thread sleeping for 41485s until 01:00
+2026-08-19 13:28:35,457 [INFO] Alarm set for 01:00 using 'alarm.mp3'
+2026-08-19 13:28:35,475 [INFO] Command processed in 0.04s (actions applied: True)
+2026-08-19 13:28:35,476 [INFO] Syntra response: Alarm set for 01:00.
+2026-08-19 13:28:35,487 [INFO] TTS Synthesizing: 'Alarm set for 01:00.'
+2026-08-19 13:28:38,603 [INFO] Microphone listening...
+2026-08-19 13:28:40,820 [INFO] Audio captured. Processing STT...
+2026-08-19 13:28:41,326 [INFO] STT Transcription: 'stop alarm'
+2026-08-19 13:28:41,460 [INFO] Alarm cancelled before it triggered.
+2026-08-19 13:28:41,461 [INFO] Alarm cancelled.
+2026-08-19 13:28:41,472 [INFO] Syntra response: Alarm has been turned off.
+2026-08-19 13:28:41,490 [INFO] TTS Synthesizing: 'Alarm has been turned off.'
+2026-08-19 13:28:43,727 [INFO] Microphone listening...
+2026-08-19 13:28:47,223 [INFO] Audio captured. Processing STT...
+2026-08-19 13:28:47,981 [INFO] STT Transcription: 'set alarm for 1'
+2026-08-19 13:28:48,031 [INFO] Resolved alarm sound 'c:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\alarm\alarm.mp3' -> 'c:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\alarm\alarm.mp3'
+2026-08-19 13:28:48,031 [INFO] Alarm cancelled.
+2026-08-19 13:28:48,033 [INFO] Alarm thread sleeping for 41472s until 01:00
+2026-08-19 13:28:48,034 [INFO] Alarm set for 01:00 using 'alarm.mp3'
+2026-08-19 13:28:48,037 [INFO] Command processed in 0.02s (actions applied: True)
+2026-08-19 13:28:48,038 [INFO] Syntra response: Alarm set for 01:00.
+2026-08-19 13:28:48,078 [INFO] TTS Synthesizing: 'Alarm set for 01:00.'
+2026-08-19 13:28:55,038 [INFO] Alarm cancelled before it triggered.
+2026-08-19 13:28:55,039 [INFO] Alarm cancelled.
+2026-08-19 13:28:55,049 [INFO] Syntra response: Alarm has been turned off.
+2026-08-19 13:28:56,864 [INFO] Resolved alarm sound 'c:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\alarm\alarm.mp3' -> 'c:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\alarm\alarm.mp3'
+2026-08-19 13:28:56,864 [INFO] Alarm cancelled.
+2026-08-19 13:28:56,865 [INFO] Alarm thread sleeping for 4s until 13:29
+2026-08-19 13:28:56,865 [INFO] Alarm set for 13:29 using 'alarm.mp3'
+2026-08-19 13:28:56,866 [INFO] Syntra response: Alarm set for 01:29 PM.
+2026-08-19 13:29:00,921 [INFO] Alarm triggered: playing 'alarm.mp3'
+2026-08-19 13:29:00,922 [INFO] Alarm fired, playing 'c:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\alarm\alarm.mp3'
+2026-08-19 13:29:00,928 [INFO] Syntra response: Wake up! Your alarm is going off.
+2026-08-19 13:29:00,934 [INFO] TTS Synthesizing: 'Wake up! Your alarm is going off.'
+2026-08-19 13:29:02,867 [INFO] Alarm cancelled.
+2026-08-19 13:29:02,892 [INFO] Syntra response: Alarm has been turned off.
+2026-08-19 13:29:06,647 [INFO] Voice gender switched to 'male'.
+2026-08-19 13:29:06,648 [INFO] Syntra response: Voice switched to male.
+2026-08-19 13:29:13,430 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'hello'
+2026-08-19 13:29:14,756 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:29:14,757 [INFO] Raw LLM Response: {
+  "actions": [],
+  "spoken_response": "Hello! How can I help you today?"
+}
+2026-08-19 13:29:14,758 [INFO] Command processed in 1.33s (actions applied: False)
+2026-08-19 13:29:14,761 [INFO] Syntra response: Hello! How can I help you today?
+2026-08-19 13:29:14,772 [INFO] TTS Synthesizing: 'Hello! How can I help you today?'
+2026-08-19 13:30:38,253 [INFO] Initializing Syntra AI Home Assistant...
+2026-08-19 13:30:38,835 [INFO] Audio mixer initialized.
+2026-08-19 13:30:38,842 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 13:30:40,274 [INFO] Launching Syntra GUI application...
+2026-08-19 13:30:40,774 [INFO] Delivering session greeting.
+2026-08-19 13:30:40,774 [INFO] Syntra response: Hello! I am Syntra, your home assistant. How can I assist you today?
+2026-08-19 13:30:40,775 [INFO] TTS Synthesizing: 'Hello! I am Syntra, your home assistant. How can I assist you today?'
+2026-08-19 13:30:40,861 [INFO] Imported existing <module 'comtypes.gen' from 'C:\\Users\\Sophia\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-08-19 13:30:40,862 [INFO] Using writeable comtypes cache directory: 'C:\Users\Sophia\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2026-08-19 13:30:41,192 [INFO] Discovered 2 installed TTS voice(s).
+2026-08-19 13:30:57,018 [INFO] Weather fetched for California: 21.8°C, Clear sky
+2026-08-19 13:30:57,024 [INFO] Command processed in 0.66s (actions applied: True)
+2026-08-19 13:30:57,025 [INFO] Syntra response: It's currently 22°C and clear sky in California, US.
+2026-08-19 13:30:57,028 [INFO] TTS Synthesizing: 'It's currently 22°C and clear sky in California, US.'
+2026-08-19 13:31:03,356 [INFO] Weather fetched for San Francisco: 14.4°C, Broken clouds
+2026-08-19 13:31:03,357 [INFO] Command processed in 0.62s (actions applied: True)
+2026-08-19 13:31:03,358 [INFO] Syntra response: It's currently 14°C and broken clouds in San Francisco, US.
+2026-08-19 13:31:03,365 [INFO] TTS Synthesizing: 'It's currently 14°C and broken clouds in San Francisco, US.'
+2026-08-19 13:31:12,586 [INFO] Resolved 'new york' -> timezone 'America/New_York' -> 1:31 AM
+2026-08-19 13:31:12,586 [INFO] Command processed in 4.26s (actions applied: True)
+2026-08-19 13:31:12,586 [INFO] Syntra response: It's 1:31 AM on Wednesday, August 19 in new york.
+2026-08-19 13:31:12,592 [INFO] TTS Synthesizing: 'It's 1:31 AM on Wednesday, August 19 in new york.'
+2026-08-19 13:31:19,916 [INFO] Resolved 'manila' -> timezone 'Asia/Manila' -> 1:31 PM
+2026-08-19 13:31:19,916 [INFO] Command processed in 0.0s (actions applied: True)
+2026-08-19 13:31:19,917 [INFO] Syntra response: It's 1:31 PM on Wednesday, August 19 in manila.
+2026-08-19 13:31:19,924 [INFO] TTS Synthesizing: 'It's 1:31 PM on Wednesday, August 19 in manila.'
+2026-08-19 13:31:27,631 [INFO] Resolved 'general trias' -> timezone 'Asia/Manila' -> 1:31 PM
+2026-08-19 13:31:27,632 [INFO] Command processed in 0.0s (actions applied: True)
+2026-08-19 13:31:27,632 [INFO] Syntra response: It's 1:31 PM on Wednesday, August 19 in general trias.
+2026-08-19 13:31:27,642 [INFO] TTS Synthesizing: 'It's 1:31 PM on Wednesday, August 19 in general trias.'
+2026-08-19 13:31:38,293 [INFO] Resolved 'rizal' -> timezone 'Asia/Manila' -> 1:31 PM
+2026-08-19 13:31:38,294 [INFO] Command processed in 0.01s (actions applied: True)
+2026-08-19 13:31:38,294 [INFO] Syntra response: It's 1:31 PM on Wednesday, August 19 in rizal.
+2026-08-19 13:31:38,298 [INFO] TTS Synthesizing: 'It's 1:31 PM on Wednesday, August 19 in rizal.'
+2026-08-19 13:31:42,538 [INFO] Voice language switched to 'fil-PH'.
+2026-08-19 13:31:42,538 [INFO] Syntra response: Voice language switched to Filipino.
+2026-08-19 13:31:47,424 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'sino ka?'
+2026-08-19 13:31:49,130 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:31:49,131 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "get_time", "target": "living_room_light", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The time is 14:30."
+}
+2026-08-19 13:31:49,132 [WARNING] Ignoring unsupported action 'get_time' for target 'living_room_light'
+2026-08-19 13:31:49,132 [INFO] Command processed in 1.71s (actions applied: False)
+2026-08-19 13:31:49,132 [INFO] Syntra response: I heard the command but couldn't tell what value to set - could you repeat it with a specific number?
+2026-08-19 13:31:49,136 [INFO] TTS Synthesizing: 'I heard the command but couldn't tell what value to set - could you repeat it with a specific number?'
+2026-08-19 13:31:49,175 [WARNING] No 'female' voice found matching language 'fil-PH' - using best gender match instead (system may not have that language pack installed).
+2026-08-19 13:31:54,653 [INFO] Voice language switched to 'en-US'.
+2026-08-19 13:31:54,654 [INFO] Syntra response: Voice language switched to English.
+2026-08-19 13:31:55,363 [INFO] Voice language switched to 'fil-PH'.
+2026-08-19 13:31:55,363 [INFO] Syntra response: Voice language switched to Filipino.
+2026-08-19 13:31:58,158 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'hello'
+2026-08-19 13:31:59,280 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:31:59,281 [INFO] Raw LLM Response: {
+  "actions": [],
+  "spoken_response": "Hello! How can I help you today?"
+}
+2026-08-19 13:31:59,281 [INFO] Command processed in 1.12s (actions applied: False)
+2026-08-19 13:31:59,281 [INFO] Syntra response: Hello! How can I help you today?
+2026-08-19 13:31:59,282 [INFO] TTS Synthesizing: 'Hello! How can I help you today?'
+2026-08-19 13:31:59,323 [WARNING] No 'female' voice found matching language 'fil-PH' - using best gender match instead (system may not have that language pack installed).
+2026-08-19 13:32:02,207 [INFO] Voice language switched to 'en-US'.
+2026-08-19 13:32:02,208 [INFO] Syntra response: Voice language switched to English.
+2026-08-19 13:32:02,656 [INFO] Voice language switched to 'fil-PH'.
+2026-08-19 13:32:02,657 [INFO] Syntra response: Voice language switched to Filipino.
+2026-08-19 13:32:12,457 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'ano ang pangalan mo?'
+2026-08-19 13:32:14,315 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:32:14,316 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "set_volume", "target": "music_player", "value": 0.5, "query": "lower the volume", "source": "local"}
+  ],
+  "spoken_response": "The volume has been lowered to 50%."
+}
+2026-08-19 13:32:14,318 [INFO] Command processed in 1.86s (actions applied: True)
+2026-08-19 13:32:14,319 [INFO] Syntra response: Volume set to 50 percent.
+2026-08-19 13:32:14,343 [INFO] TTS Synthesizing: 'Volume set to 50 percent.'
+2026-08-19 13:32:14,413 [WARNING] No 'female' voice found matching language 'fil-PH' - using best gender match instead (system may not have that language pack installed).
+2026-08-19 13:36:35,190 [INFO] Microphone listening...
+2026-08-19 13:36:38,147 [INFO] Audio captured. Processing STT...
+2026-08-19 13:36:38,696 [INFO] STT Transcription: 'switch to English'
+2026-08-19 13:36:38,732 [INFO] Voice language switched to 'en-US'.
+2026-08-19 13:36:38,734 [INFO] Syntra response: Voice language switched to English.
+2026-08-19 13:36:38,752 [INFO] TTS Synthesizing: 'Voice language switched to English.'
+2026-08-19 13:36:41,990 [INFO] Microphone listening...
+2026-08-19 13:36:44,297 [INFO] Audio captured. Processing STT...
+2026-08-19 13:36:44,854 [INFO] STT Transcription: 'switch to filipino'
+2026-08-19 13:36:44,912 [INFO] Voice language switched to 'fil-PH'.
+2026-08-19 13:36:44,914 [INFO] Syntra response: Voice language switched to Filipino.
+2026-08-19 13:36:44,934 [INFO] TTS Synthesizing: 'Voice language switched to Filipino.'
+2026-08-19 13:36:45,006 [WARNING] No 'female' voice found matching language 'fil-PH' - using best gender match instead (system may not have that language pack installed).
+2026-08-19 13:37:16,115 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'salamat'
+2026-08-19 13:37:17,539 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 13:37:17,541 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "unlock", "target": "front_door_lock", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The front door has been unlocked."
+}
+2026-08-19 13:37:17,544 [INFO] Simulator state updated: front_door_lock -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 20.0, 'front_door_lock': False, 'back_door': True, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 13:37:17,545 [INFO] Command processed in 1.43s (actions applied: True)
+2026-08-19 13:37:17,547 [INFO] Syntra response: The front door has been unlocked.
+2026-08-19 13:37:17,617 [INFO] TTS Synthesizing: 'The front door has been unlocked.'
+2026-08-19 13:37:17,762 [WARNING] No 'female' voice found matching language 'fil-PH' - using best gender match instead (system may not have that language pack installed).
+2026-08-19 14:12:54,457 [INFO] Initializing Syntra AI Home Assistant...
+2026-08-19 14:12:57,874 [INFO] Audio mixer initialized.
+2026-08-19 14:12:57,876 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 14:13:00,677 [INFO] Launching Syntra GUI application...
+2026-08-19 14:13:01,452 [INFO] Delivering session greeting.
+2026-08-19 14:13:01,452 [INFO] Syntra response: Hello! I am Syntra, your home assistant. How can I assist you today?
+2026-08-19 14:13:01,453 [INFO] TTS Synthesizing: 'Hello! I am Syntra, your home assistant. How can I assist you today?'
+2026-08-19 14:13:02,735 [INFO] Imported existing <module 'comtypes.gen' from 'C:\\Users\\Sophia\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-08-19 14:13:02,736 [INFO] Using writeable comtypes cache directory: 'C:\Users\Sophia\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2026-08-19 14:13:03,325 [INFO] Discovered 2 installed TTS voice(s).
+2026-08-19 14:13:58,884 [INFO] Voice language switched to 'fil-PH'.
+2026-08-19 14:13:58,924 [INFO] Syntra response: Napalitan na ang wika ng boses sa Filipino.
+2026-08-19 14:13:58,948 [INFO] TTS Synthesizing: 'Napalitan na ang wika ng boses sa Filipino.'
+2026-08-19 14:13:59,072 [WARNING] No 'female' voice found matching language 'fil-PH' - using best gender match instead (system may not have that language pack installed).
+2026-08-19 14:14:29,128 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'hello'
+2026-08-19 14:14:37,857 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 14:14:37,860 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "turn_on", "target": "living_room_light", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "Hello! The living room lights are on."
+}
+2026-08-19 14:14:37,861 [INFO] Simulator state updated: living_room_light -> {'living_room_light': True, 'kitchen_light': False, 'thermostat': 20.0, 'front_door_lock': True, 'back_door': True, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 14:14:37,862 [INFO] Command processed in 8.74s (actions applied: True)
+2026-08-19 14:14:37,862 [INFO] Syntra response: Hello! The living room lights are on.
+2026-08-19 14:14:37,964 [INFO] TTS Synthesizing: 'Hello! The living room lights are on.'
+2026-08-19 14:14:38,061 [WARNING] No 'female' voice found matching language 'fil-PH' - using best gender match instead (system may not have that language pack installed).
+2026-08-19 14:14:51,767 [INFO] Command processed in 0.0s (actions applied: False)
+2026-08-19 14:14:51,767 [INFO] Syntra response: Ako si Syntra, ang iyong AI home assistant. Ang layunin ko ay tulungan kang kontrolin ang mga smart home device mo, pamahalaan ang pag-play ng musika, i-adjust ang temperatura, at gawing mas madali ang iyong araw-araw na gawain!
+2026-08-19 14:14:51,776 [INFO] TTS Synthesizing: 'Ako si Syntra, ang iyong AI home assistant. Ang layunin ko ay tulungan kang kontrolin ang mga smart home device mo, pamahalaan ang pag-play ng musika, i-adjust ang temperatura, at gawing mas madali ang iyong araw-araw na gawain!'
+2026-08-19 14:14:51,864 [WARNING] No 'female' voice found matching language 'fil-PH' - using best gender match instead (system may not have that language pack installed).
+2026-08-19 14:29:15,988 [INFO] Initializing Syntra AI Home Assistant...
+2026-08-19 14:29:16,663 [INFO] Audio mixer initialized.
+2026-08-19 14:29:16,665 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 14:29:18,232 [INFO] Launching Syntra GUI application...
+2026-08-19 14:29:18,733 [INFO] Delivering session greeting.
+2026-08-19 14:29:18,733 [INFO] Syntra response: Hello! I am Syntra, your home assistant. How can I assist you today?
+2026-08-19 14:29:18,735 [INFO] TTS Synthesizing (pyttsx3 engine): 'Hello! I am Syntra, your home assistant. How can I assist you today?'
+2026-08-19 14:29:18,856 [INFO] Imported existing <module 'comtypes.gen' from 'C:\\Users\\Sophia\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-08-19 14:29:18,857 [INFO] Using writeable comtypes cache directory: 'C:\Users\Sophia\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2026-08-19 14:29:19,095 [INFO] Discovered 2 installed TTS voice(s).
+2026-08-19 14:29:29,209 [INFO] Voice language switched to 'fil-PH'.
+2026-08-19 14:29:29,220 [INFO] Syntra response: Napalitan na ang wika ng boses sa Filipino.
+2026-08-19 14:29:29,226 [INFO] TTS Synthesizing (pyttsx3 engine): 'Napalitan na ang wika ng boses sa Filipino.'
+2026-08-19 14:29:29,259 [WARNING] No 'female' voice found matching language 'fil-PH' - using best gender match instead (system may not have that language pack installed).
+2026-08-19 14:38:44,343 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'change to male'
+2026-08-19 14:38:48,137 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 14:38:48,143 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "lock", "target": "front_door_lock", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The front door has been locked."
+}
+2026-08-19 14:38:48,149 [INFO] Simulator state updated: front_door_lock -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 20.0, 'front_door_lock': True, 'back_door': True, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 14:38:48,157 [INFO] Command processed in 3.84s (actions applied: True)
+2026-08-19 14:38:48,168 [INFO] Syntra response: The front door has been locked.
+2026-08-19 14:38:48,291 [INFO] TTS Synthesizing (pyttsx3 engine): 'The front door has been locked.'
+2026-08-19 14:38:48,473 [WARNING] No 'female' voice found matching language 'fil-PH' - using best gender match instead (system may not have that language pack installed).
+2026-08-19 14:38:54,230 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'change to male'
+2026-08-19 14:38:56,353 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 14:38:56,356 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "lock", "target": "front_door_lock", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The front door has been locked."
+}
+2026-08-19 14:38:56,358 [INFO] Simulator state updated: front_door_lock -> {'living_room_light': False, 'kitchen_light': False, 'thermostat': 20.0, 'front_door_lock': True, 'back_door': True, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 14:38:56,359 [INFO] Command processed in 2.13s (actions applied: True)
+2026-08-19 14:38:56,363 [INFO] Syntra response: The front door has been locked.
+2026-08-19 14:38:56,482 [INFO] TTS Synthesizing (pyttsx3 engine): 'The front door has been locked.'
+2026-08-19 14:38:56,627 [WARNING] No 'female' voice found matching language 'fil-PH' - using best gender match instead (system may not have that language pack installed).
+2026-08-19 14:39:15,604 [INFO] Voice gender switched to 'male'.
+2026-08-19 14:39:15,608 [INFO] Syntra response: Napalitan na ang boses sa lalaki.
+2026-08-19 14:39:15,645 [INFO] TTS Synthesizing (pyttsx3 engine): 'Napalitan na ang boses sa lalaki.'
+2026-08-19 14:39:15,835 [WARNING] No 'male' voice found matching language 'fil-PH' - using best gender match instead (system may not have that language pack installed).
+2026-08-19 14:39:21,882 [INFO] Voice gender switched to 'female'.
+2026-08-19 14:39:21,893 [INFO] Syntra response: Napalitan na ang boses sa babae.
+2026-08-19 14:39:21,906 [INFO] TTS Synthesizing (pyttsx3 engine): 'Napalitan na ang boses sa babae.'
+2026-08-19 14:39:22,001 [WARNING] No 'female' voice found matching language 'fil-PH' - using best gender match instead (system may not have that language pack installed).
+2026-08-19 14:43:27,167 [INFO] Initializing Syntra AI Home Assistant...
+2026-08-19 14:43:27,793 [INFO] Audio mixer initialized.
+2026-08-19 14:43:27,798 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 14:43:30,630 [INFO] Launching Syntra GUI application...
+2026-08-19 14:43:31,295 [INFO] Delivering session greeting.
+2026-08-19 14:43:31,296 [INFO] Syntra response: Hello! I am Syntra, your home assistant. How can I assist you today?
+2026-08-19 14:43:31,300 [INFO] TTS Synthesizing: 'Hello! I am Syntra, your home assistant. How can I assist you today?'
+2026-08-19 14:43:31,474 [INFO] Imported existing <module 'comtypes.gen' from 'C:\\Users\\Sophia\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-08-19 14:43:31,475 [INFO] Using writeable comtypes cache directory: 'C:\Users\Sophia\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2026-08-19 14:46:23,319 [INFO] Initializing Syntra AI Home Assistant...
+2026-08-19 14:46:23,955 [INFO] Audio mixer initialized.
+2026-08-19 14:46:23,960 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 14:46:26,704 [INFO] Launching Syntra GUI application...
+2026-08-19 14:46:27,212 [INFO] Delivering session greeting.
+2026-08-19 14:46:27,213 [INFO] Syntra response: Hello! I am Syntra, your home assistant. How can I assist you today?
+2026-08-19 14:46:27,214 [INFO] TTS Synthesizing: 'Hello! I am Syntra, your home assistant. How can I assist you today?'
+2026-08-19 14:46:27,375 [INFO] Imported existing <module 'comtypes.gen' from 'C:\\Users\\Sophia\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-08-19 14:46:27,376 [INFO] Using writeable comtypes cache directory: 'C:\Users\Sophia\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2026-08-19 14:46:27,769 [INFO] Discovered 2 installed TTS voice(s).
+2026-08-19 15:15:57,806 [INFO] Initializing Syntra AI Home Assistant...
+2026-08-19 15:15:58,564 [INFO] Audio mixer initialized.
+2026-08-19 15:15:58,567 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 15:15:59,903 [INFO] Launching Syntra GUI application...
+2026-08-19 15:16:00,404 [INFO] Delivering session greeting.
+2026-08-19 15:16:00,404 [INFO] Syntra response: Hello! I am Syntra, your home assistant. How can I assist you today?
+2026-08-19 15:16:00,405 [INFO] TTS Synthesizing: 'Hello! I am Syntra, your home assistant. How can I assist you today?'
+2026-08-19 15:16:00,507 [INFO] Imported existing <module 'comtypes.gen' from 'C:\\Users\\Sophia\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-08-19 15:16:00,507 [INFO] Using writeable comtypes cache directory: 'C:\Users\Sophia\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2026-08-19 15:20:17,526 [INFO] Initializing Syntra AI Home Assistant...
+2026-08-19 15:20:17,681 [INFO] Imported existing <module 'comtypes.gen' from 'C:\\Users\\Sophia\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-08-19 15:20:17,682 [INFO] Using writeable comtypes cache directory: 'C:\Users\Sophia\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2026-08-19 15:20:18,105 [INFO] TTS voice set to gender='female' -> voice id 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_ZIRA_11.0' (Microsoft Zira Desktop - English (United States))
+2026-08-19 15:20:18,640 [INFO] Audio mixer initialized.
+2026-08-19 15:20:18,641 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 15:20:19,964 [INFO] Launching Syntra GUI application...
+2026-08-19 15:20:20,464 [INFO] Delivering session greeting.
+2026-08-19 15:20:20,464 [INFO] Syntra response: Hello! I am Syntra, your home assistant. How can I assist you today?
+2026-08-19 15:20:20,466 [INFO] TTS Synthesizing: 'Hello! I am Syntra, your home assistant. How can I assist you today?'
+2026-08-19 15:20:31,645 [INFO] TTS voice set to gender='male' -> voice id 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_DAVID_11.0' (Microsoft David Desktop - English (United States))
+2026-08-19 15:20:31,645 [INFO] Syntra response: Voice switched to male.
+2026-08-19 15:20:31,647 [INFO] TTS Synthesizing: 'Voice switched to male.'
+2026-08-19 15:21:22,433 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'turn on both lights'
+2026-08-19 15:21:28,720 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 15:21:28,721 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "turn_on", "target": "living_room_light", "value": null, "query": null, "source": "local"},
+    {"action": "turn_on", "target": "kitchen_light", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "Both lights have been turned on."
+}
+2026-08-19 15:21:28,721 [INFO] Simulator state updated: living_room_light -> {'living_room_light': True, 'kitchen_light': False, 'thermostat': 20.0, 'front_door_lock': True, 'back_door': True, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 15:21:28,721 [INFO] Simulator state updated: kitchen_light -> {'living_room_light': True, 'kitchen_light': True, 'thermostat': 20.0, 'front_door_lock': True, 'back_door': True, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 15:21:28,750 [INFO] Command processed in 6.32s (actions applied: True)
+2026-08-19 15:21:28,750 [INFO] Syntra response: Both lights have been turned on.
+2026-08-19 15:21:28,818 [INFO] TTS Synthesizing: 'Both lights have been turned on.'
+2026-08-19 15:21:37,504 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'change thermostat to 17'
+2026-08-19 15:21:39,294 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 15:21:39,295 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "set_temp", "target": "thermostat", "value": 17, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The thermostat has been set to 17 degrees."
+}
+2026-08-19 15:21:39,295 [INFO] Simulator state updated: thermostat -> {'living_room_light': True, 'kitchen_light': True, 'thermostat': 17.0, 'front_door_lock': True, 'back_door': True, 'humidifier': False, 'air_conditioner': False}
+2026-08-19 15:21:39,295 [INFO] Command processed in 1.79s (actions applied: True)
+2026-08-19 15:21:39,296 [INFO] Syntra response: The thermostat has been set to 17 degrees.
+2026-08-19 15:21:39,323 [INFO] TTS Synthesizing: 'The thermostat has been set to 17 degrees.'
+2026-08-19 15:22:10,495 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'turn on both humidifier and ac'
+2026-08-19 15:22:12,432 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 15:22:12,433 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "turn_on", "target": "humidifier", "value": null, "query": null, "source": "local"},
+    {"action": "turn_on", "target": "air_conditioner", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "Both the humidifier and air conditioner have been turned on."
+}
+2026-08-19 15:22:12,434 [INFO] Simulator state updated: humidifier -> {'living_room_light': True, 'kitchen_light': True, 'thermostat': 17.0, 'front_door_lock': True, 'back_door': True, 'humidifier': True, 'air_conditioner': False}
+2026-08-19 15:22:12,435 [INFO] Simulator state updated: air_conditioner -> {'living_room_light': True, 'kitchen_light': True, 'thermostat': 17.0, 'front_door_lock': True, 'back_door': True, 'humidifier': True, 'air_conditioner': True}
+2026-08-19 15:22:12,476 [INFO] Command processed in 1.98s (actions applied: True)
+2026-08-19 15:22:12,477 [INFO] Syntra response: Both the humidifier and air conditioner have been turned on.
+2026-08-19 15:22:12,534 [INFO] TTS Synthesizing: 'Both the humidifier and air conditioner have been turned on.'
+2026-08-19 15:22:16,292 [INFO] TTS voice set to gender='female' -> voice id 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_ZIRA_11.0' (Microsoft Zira Desktop - English (United States))
+2026-08-19 15:22:16,293 [INFO] Syntra response: Voice switched to female.
+2026-08-19 15:22:16,346 [INFO] TTS Synthesizing: 'Voice switched to female.'
+2026-08-19 15:22:20,673 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'play music'
+2026-08-19 15:22:22,147 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 15:22:22,147 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "play", "target": "music_player", "value": null, "query": "music player", "source": "local"}
+  ],
+  "spoken_response": "The music player is now playing."
+}
+2026-08-19 15:22:22,151 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 15:22:22,176 [INFO] Command processed in 1.51s (actions applied: True)
+2026-08-19 15:22:22,176 [INFO] Syntra response: Now playing Justin Bieber - SPEED DEMON.
+2026-08-19 15:22:22,194 [INFO] TTS Synthesizing: 'Now playing Justin Bieber - SPEED DEMON.'
+2026-08-19 15:22:23,732 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'next'
+2026-08-19 15:22:25,070 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 15:22:25,071 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "next", "target": "music_player", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The music has been moved to the next track."
+}
+2026-08-19 15:22:25,072 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 15:22:25,096 [INFO] Command processed in 1.36s (actions applied: True)
+2026-08-19 15:22:25,096 [INFO] Syntra response: Now playing Lauv - I Like Me Better.
+2026-08-19 15:22:26,363 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'next'
+2026-08-19 15:22:26,456 [INFO] TTS Synthesizing: 'Now playing Lauv - I Like Me Better.'
+2026-08-19 15:22:27,651 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 15:22:27,652 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "next", "target": "music_player", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The music has been moved to the next track."
+}
+2026-08-19 15:22:27,654 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 15:22:27,686 [INFO] Command processed in 1.32s (actions applied: True)
+2026-08-19 15:22:27,687 [INFO] Syntra response: Now playing Westlife - I Lay My Love on You.
+2026-08-19 15:22:29,134 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'next'
+2026-08-19 15:22:29,972 [INFO] TTS Synthesizing: 'Now playing Westlife - I Lay My Love on You.'
+2026-08-19 15:22:30,486 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 15:22:30,487 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "next", "target": "music_player", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The music has been moved to the next track."
+}
+2026-08-19 15:22:30,489 [INFO] Music library loaded: 5 track(s) in 'C:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\music'
+2026-08-19 15:22:30,534 [INFO] Command processed in 1.4s (actions applied: True)
+2026-08-19 15:22:30,535 [INFO] Syntra response: Now playing Ariana Grande - kiss me.
+2026-08-19 15:22:31,273 [INFO] Sending prompt to local LLM (qwen2.5:1.5b): 'stop'
+2026-08-19 15:22:32,523 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-19 15:22:32,524 [INFO] Raw LLM Response: {
+  "actions": [
+    {"action": "stop", "target": "music_player", "value": null, "query": null, "source": "local"}
+  ],
+  "spoken_response": "The music has been stopped."
+}
+2026-08-19 15:22:32,526 [INFO] Command processed in 1.25s (actions applied: True)
+2026-08-19 15:22:32,526 [INFO] Syntra response: Stopped the music.
+2026-08-19 15:22:34,023 [INFO] TTS Synthesizing: 'Now playing Ariana Grande - kiss me.'
+2026-08-19 15:22:37,838 [INFO] TTS Synthesizing: 'Stopped the music.'
+2026-08-19 15:22:38,884 [INFO] Resolved alarm sound 'c:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\alarm\alarm.mp3' -> 'c:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\alarm\alarm.mp3'
+2026-08-19 15:22:38,884 [INFO] Alarm cancelled.
+2026-08-19 15:22:38,886 [INFO] Alarm thread sleeping for 86362s until 15:22
+2026-08-19 15:22:38,886 [INFO] Alarm set for 15:22 using 'alarm.mp3'
+2026-08-19 15:22:38,890 [INFO] Command processed in 0.01s (actions applied: True)
+2026-08-19 15:22:38,890 [INFO] Syntra response: Alarm set for 15:22.
+2026-08-19 15:22:40,002 [INFO] TTS Synthesizing: 'Alarm set for 15:22.'
+2026-08-19 15:22:46,890 [INFO] Alarm cancelled before it triggered.
+2026-08-19 15:22:46,891 [INFO] Alarm cancelled.
+2026-08-19 15:22:46,898 [INFO] Syntra response: Alarm has been turned off.
+2026-08-19 15:22:46,909 [INFO] TTS Synthesizing: 'Alarm has been turned off.'
+2026-08-19 15:22:51,982 [INFO] Resolved alarm sound 'c:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\alarm\alarm.mp3' -> 'c:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\alarm\alarm.mp3'
+2026-08-19 15:22:51,983 [INFO] Alarm cancelled.
+2026-08-19 15:22:51,983 [INFO] Alarm thread sleeping for 9s until 15:23
+2026-08-19 15:22:51,983 [INFO] Alarm set for 15:23 using 'alarm.mp3'
+2026-08-19 15:22:51,993 [INFO] Command processed in 0.01s (actions applied: True)
+2026-08-19 15:22:51,993 [INFO] Syntra response: Alarm set for 15:23.
+2026-08-19 15:22:52,004 [INFO] TTS Synthesizing: 'Alarm set for 15:23.'
+2026-08-19 15:23:01,020 [INFO] Alarm triggered: playing 'alarm.mp3'
+2026-08-19 15:23:01,021 [INFO] Alarm fired, playing 'c:\Users\Sophia\Downloads\Syntra_FinalOutput\Syntra\Syntra\alarm\alarm.mp3'
+2026-08-19 15:23:01,028 [INFO] Syntra response: Wake up! Your alarm is going off.
+2026-08-19 15:23:01,071 [INFO] TTS Synthesizing: 'Wake up! Your alarm is going off.'
+2026-08-19 15:23:03,015 [INFO] Alarm cancelled.
+2026-08-19 15:23:03,033 [INFO] Syntra response: Alarm has been turned off.
